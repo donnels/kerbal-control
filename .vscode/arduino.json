@@ -1,0 +1,6 @@
+{
+    "configuration": "cpu=8MHzatmega32U4",
+    "board": "SparkFun:avr:promicro",
+    "port": "/dev/cu.usbmodem14101",
+    "sketch": "fastled-example.ino"
+}
