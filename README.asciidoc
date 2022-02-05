@@ -1,4 +1,8 @@
 = kerbal-control
+:toc: right
+:data-uri:
+:doctype: article
+
 A project to add some more control to the PS5 Kerbal simulation.
 
 * link:https://www.kerbalspaceprogram.com/[^]
