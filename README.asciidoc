@@ -1,0 +1,20 @@
+= kerbal-control
+A project to add some more control to the PS5 Kerbal simulation.
+
+== Starting point
+Kerbal allows control vi the PS5 controllers AND via keyboard and mouse.
+This means it should be possible to add some easy toggles.
+The first toggle would be the space bar which kerbal uses to trigger stages.
+
+=== kerbal key bindings
+The following is a list of key bindings we can work with.
+
+.Key bindings for Kerbal
+* https://wiki.kerbalspaceprogram.com/wiki/Key_bindings
+
+=== Arduino - pro micro (5V)
+Initial choice for a prototype is the AVR ATmega32u4 8-bit microcontroller which has a USB controller and can therefore be used as botha keyboard and mouse if required.
+
+"The Pro Micro is an Arduino-compatible microcontroller board developed under an open hardware license by Sparkfun. Clones of the Pro Micro are often used as a lower-cost alternative to a Teensy 2.0 as a basis for a DIY keyboard controller/converter when a lower number of pins would suffice."
+-- https://deskthority.net/wiki/Arduino_Pro_Micro
+
