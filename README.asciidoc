@@ -160,12 +160,12 @@ void loop() {
 *** A classic toggle with red cover
 ** Control 
 *** Stage trigger (space bar)
-*** SAS (on/off)
-*** gear (up/down)
-*** time warp (rotary +/-)
-*** throttle (rotary +/-)
-*** motors (on/off)
-*** View (inside/outside)
+*** SAS (on/off) (t)
+*** gear (up/down) (g)
+*** time warp (rotary +/-) (.,)
+*** throttle (rotary +/-) (shift,cntrl)
+*** motors (on/off) (x,k)
+*** View (inside/outside) ???
 
 This should cover the most required buttons and should be possible without multiplexing.
 
