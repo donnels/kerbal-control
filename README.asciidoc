@@ -141,6 +141,11 @@ void loop() {
 }
 ----
 
+== Step 3 - rotary encoders
+
+.An initial example with interrupts
+* link:https://gist.github.com/dkgrieshammer/66cce6ec92a6427c16804df84c22cc83[^]
+
 
 [appendix]
 == Requirements
