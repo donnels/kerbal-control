@@ -43,7 +43,7 @@ RGBW is better suited to lighting anyway so let's use it for that later.
 To get started I went to an example for LEDs to be able to set a LED with a key/button.
 
 .First LED example (arduino IDE)
-[source, C]
+[source, C++]
 ----
 #include <FastLED.h>
 #define NUM_LEDS 22
@@ -106,7 +106,7 @@ The big red button is to trigger a stage and the toggle switch is to arm it.
 Let's see if that works.
 
 .initial tests
-[source, c]
+[source, c++]
 ----
 const int ARMPin = 2;     // the number of the pushbutton pin
 const int StagePin = 3;     // the number of the pushbutton pin
