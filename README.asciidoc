@@ -34,7 +34,7 @@ The other LED rings I have are less tightly packed with LEDs.
 As I have a few WS2812 strips on top of the one RGBW ring the choice went towards the WS2812 to be able to mix the strip and ring.
 RGBW is better suited to lighting anyway so let's use it for that later.
 
-== First prototype
+== Step 1 - First prototype
 To get started I went to an example for LEDs to be able to set a LED with a key/button.
 
 .First LED example (arduino IDE)
@@ -71,5 +71,29 @@ void loop() {
         delay(150);
     }
 }
+----
+
+The first test looks good.
+
+.Initial breadboard prototype with WS2812 ring and strip
+image::./images/Prototype-led-ring-and-strip.jpeg[]
+
+The above code runs a LED around the ring and sets static colours on the strip.
+A good start.
+
+== Step 2 - Attach a button
+
+Since this will be starting rockets let's make it feel that way.
+
+.first buttons
+image::./images/Button-Triger-stage.jpeg[]
+
+The big red button is to trigger a stage and the toggle switch is to arm it.
+
+Let's see if that works.
+
+[source, c]
+----
+... TBD
 ----
 
