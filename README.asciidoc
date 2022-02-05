@@ -1,7 +1,8 @@
 = kerbal-control
 :toc: right
-:data-uri:
+:data-uri: false
 :doctype: article
+:icons: font
 
 A project to add some more control to the PS5 Kerbal simulation.
 
