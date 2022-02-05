@@ -40,7 +40,7 @@ As I have a few WS2812 strips on top of the one RGBW ring the choice went toward
 RGBW is better suited to lighting anyway so let's use it for that later.
 
 == Step 1 - First prototype
-To get started I went to an example for LEDs to be able to set a LED with a key/button.
+To get started I went to an example for LEDs to be able to later set a LED with a key/button.
 
 .First LED example (arduino IDE)
 [source, C++]
@@ -173,6 +173,7 @@ This should cover the most required buttons and should be possible without multi
 == Interface design thoughts
 Since the first button is a big red one with a latch it make sense to also show what state it's in.
 Adding a LED ring around it sounds like a good idea.
+Adding a LED ring around a rotary encoder also sounds like a good idea (optional).
 
 === Arm/disarm toggle
 toggle disarmed:: Arm led LED green(?), latch ring red blink(?)
