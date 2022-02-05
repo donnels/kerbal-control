@@ -37,8 +37,8 @@ RGBW is better suited to lighting anyway so let's use it for that later.
 == First prototype
 To get started I went to an example for LEDs to be able to set a LED with a key/button.
 
-.First LED example
-[source, arduino]
+.First LED example (arduino IDE)
+[source, C]
 ----
 #include <FastLED.h>
 #define NUM_LEDS 22
