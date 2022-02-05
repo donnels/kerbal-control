@@ -81,9 +81,10 @@ image::./images/Prototype-led-ring-and-strip.jpeg[]
 The above code runs a LED around the ring and sets static colours on the strip.
 A good start.
 
-== Step 2 - Attach a button
+== Step 2 - Attach a button to trigger a stage
 
 Since this will be starting rockets let's make it feel that way.
+Just the space bar and maybe a toggle to arm it.
 
 .first buttons
 image::./images/Button-Triger-stage.jpeg[]
@@ -97,3 +98,39 @@ Let's see if that works.
 ... TBD
 ----
 
+
+[appendix]
+== Requirements
+
+.Initial list of requirements
+* Control Kerbal on PS5
+** Via USB(A) keyboard interface
+*** Use big red button with latch for stages
+** Must show actions/button presses
+*** WS2812 for key status changes red/green/etc
+** Add some safety toggles (arm/disarm)
+*** A classic toggle with red cover
+** Control 
+*** Stage trigger (space bar)
+*** SAS (on/off)
+*** gear (up/down)
+*** time warp (rotary +/-)
+*** throttle (rotary +/-)
+*** motors (on/off)
+*** View (inside/outside)
+
+This should cover the most required buttons and should be possible without multiplexing.
+
+[appendix]
+== Interface design thoughts
+Since the first button is a big red one with a latch it make sense to also show what state it's in.
+Adding a LED ring around it sounds like a good idea.
+
+=== Arm/disarm toggle
+toggle disarmed:: Arm led LED green(?), latch ring red blink(?)
+toggle armed:: ARM led red, latch ring green
+
+=== Triger stage button
+unlatched:: ring green
+press:: ring red for 1 sec
+latched:: Ring orange
