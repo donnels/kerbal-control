@@ -45,7 +45,7 @@ To get started I went to an example for LEDs to be able to later set a LED with 
 .First LED example (arduino IDE)
 [source, C++]
 ----
-include::https://github.com/donnels/kerbal-control/blob/main/fastled-test/fastled-test.ino[]
+include::./fastled-test/fastled-test.ino[]
 ----
 
 The first test looks good.
