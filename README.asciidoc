@@ -73,6 +73,9 @@ image::./images/Button-Triger-stage.jpeg[]
 
 The big red button is to trigger a stage and the toggle switch is to arm it.
 
+.Very draft UI design
+image::./images/kerbal_ctrl_box_prototype.svg[]
+
 Let's see if that works.
 
 .initial tests
