@@ -1,3 +1,6 @@
+#include <KeyboardLayout.h>
+#include <Keyboard.h>
+
 const int buttonPin = 2;     // the number of the pushbutton pin
 const int ledPin =  13;      // the number of the LED pin
 
@@ -9,6 +12,8 @@ void setup() {
   pinMode(ledPin, OUTPUT);
   // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT);
+  //begins emulating a keyboard
+  Keyboard.begin();
 }
 
 void loop() {
@@ -19,6 +24,10 @@ void loop() {
   if (buttonState == HIGH) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
+    //press spacebar on a keyboard
+    Keyboard.press((char) 0x20);
+    delay(10);
+    Keyboard.releaseAll();
   } else {
     // turn LED off:
     digitalWrite(ledPin, LOW);
