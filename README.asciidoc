@@ -70,6 +70,8 @@ Just the space bar and maybe a toggle to arm it.
 ** link:https://www.arduino.cc/reference/en/language/functions/usb/keyboard/[^]
 * Button
 ** link:https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button[^]
+* State change detection
+** link:https://www.arduino.cc/en/Tutorial/BuiltInExamples/StateChangeDetection[^]
 
 .Resistor for pull down
 image::./images/resistor-10kohm.png[]
