@@ -25,7 +25,7 @@ void loop() {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
     //press spacebar on a keyboard
-    Keyboard.press((char) 0x20);
+    Keyboard.write((char) 0x20);
     delay(10);
     Keyboard.releaseAll();
   } else {
