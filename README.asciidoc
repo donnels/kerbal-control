@@ -1,8 +1,12 @@
 = kerbal-control
+:author: Sean Donnellan, Fynn Donnellan
 :toc: right
 :data-uri: false
 :doctype: article
 :icons: font
+:pdf-page-size: A4
+:source-highlighter: rouge
+:title-page:
 
 A project to add some more control to the PS5 Kerbal simulation.
 
@@ -43,7 +47,7 @@ RGBW is better suited to lighting anyway so let's use it for that later.
 To get started I went to an example for LEDs to be able to later set a LED with a key/button.
 
 .First LED example (arduino IDE)
-[source, C++]
+[source, c++]
 ----
 include::./fastled-test/fastled-test.ino[]
 ----
