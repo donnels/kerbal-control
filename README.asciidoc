@@ -93,6 +93,26 @@ Let's see if that works.
 include::./button-test/button-test.ino[]
 ----
 
+.Example interrupt driven routine debounced
+[source, c++]
+----
+void my_interrupt_handler()
+{
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  // If interrupts come faster than 200ms, assume it's a bounce and ignore
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+    ... do your thing
+  }
+  last_interrupt_time = interrupt_time;
+}
+----
+
+The above short section shows a debounced interrupt that uses millis instead of delays.
+The important thing here is that if we debounce with delays we stall the whole loop so that if we have a LED animation or something else running it get's stalled. using millis allows the rest to keep running.
+
+
 == Step 3 - rotary encoders
 
 .An initial example with interrupts
