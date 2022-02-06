@@ -71,6 +71,9 @@ Just the space bar and maybe a toggle to arm it.
 * Button
 ** link:https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button[^]
 
+.Resistor for pull down
+image::./images/resistor-10kohm.png[]
+We will need to pull down the pin for the button so the above resistor is included to show an example 10K Ohm resistor.
 
 .first buttons
 image::./images/Button-Triger-stage.jpeg[]
