@@ -16,6 +16,15 @@ void setup() {
   Keyboard.begin();
 }
 
+void BRB_interrupt_handler() {
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  // If interrupts come faster than 200ms, assume it's a bounce and ignore 
+  if (interrupt_time - last_interrupt_time > 200)
+  // do you thing here
+    last_interrupt_time = interrupt_time;
+}
+
 void loop() {
   // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
@@ -25,7 +34,7 @@ void loop() {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
     //press spacebar on a keyboard
-    Keyboard.write((char) 0x20);
+    Keyboard.press((char) 0x20);
     delay(10);
     Keyboard.releaseAll();
   } else {

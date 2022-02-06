@@ -155,3 +155,18 @@ toggle armed:: ARM led red, latch ring green
 unlatched:: ring green
 press:: ring red for 1 sec
 latched:: Ring orange
+
+[appendix]
+== 3d printed test stand
+The Aim here is to have a stand to mount the buttons and LEDs to while testing.
+After testing this can be used as a template for drilling.
+Also this can later be adapted to make a holder for the led ring and potentially the leds that can be mounted under the lid of the box.
+
+.OpenScad source
+[source,openscad]
+----
+include::./3d/protoTypeStand.scad[]
+----
+
+.3d stand STL (very first very draft iteration)
+image::./3d/Screenshot 2022-02-06 at 22.12.55.png[][]
