@@ -85,37 +85,7 @@ Let's see if that works.
 .initial tests
 [source, c++]
 ----
-const int ARMPin = 2;     // the number of the pushbutton pin
-const int StagePin = 3;     // the number of the pushbutton pin
-const int ledPin =  13;      // the number of the LED pin
-
-int ARMState = 0;         // variable for reading the pushbutton status
-int Armed = 0;         // variable to set when armed
-
-
-void setup() {
-    // initialize the LED pin as an output:
-    pinMode(ledPin, OUTPUT);
-    // initialize the pushbutton pin as an input:
-    pinMode(ARMPin, INPUT);
-    pinMode(StagePin, INPUT);
-}
-
-void loop() {
-    // read the state of the pushbutton value:
-    ARMState = digitalRead(ARMPin);
-
-    // check if the pushbutton is pressed. If it is, the ARMState is HIGH:
-    if (ARMState == HIGH) {
-        // turn LED on:
-        digitalWrite(ledPin, HIGH);
-        Armed = 1;
-    } else {
-        // turn LED off:
-        digitalWrite(ledPin, LOW);
-        Armed = 0;
-    }
-}
+include::./button-test/button-test.ino[]
 ----
 
 == Step 3 - rotary encoders
