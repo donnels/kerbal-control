@@ -47,7 +47,7 @@ RGBW is better suited to lighting anyway so let's use it for that later.
 To get started I went to an example for LEDs to be able to later set a LED with a key/button.
 
 .First LED example (arduino IDE)
-[source, c++]
+[source%linenums, c++]
 ----
 include::./fastled-test/fastled-test.ino[]
 ----
@@ -88,13 +88,13 @@ image::./images/kerbal_ctrl_box_prototype.svg[]
 Let's see if that works.
 
 .initial tests
-[source, c++]
+[source%linenums, c++]
 ----
 include::./button-test/button-test.ino[]
 ----
 
 .Example interrupt driven routine debounced
-[source, c++]
+[source%linenums, c++]
 ----
 void my_interrupt_handler()
 {
@@ -163,7 +163,7 @@ After testing this can be used as a template for drilling.
 Also this can later be adapted to make a holder for the led ring and potentially the leds that can be mounted under the lid of the box.
 
 .OpenScad source
-[source,openscad]
+[source%linenums,openscad]
 ----
 include::./3d/protoTypeStand.scad[]
 ----

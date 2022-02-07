@@ -4,13 +4,13 @@ topWidth=117;
 topDepth=106;
 topThick=2;
 pillar=4;
-height=40;
+height=46;
 BigRedButtonD=22;
 ToggleD=12;
 WS2812D=4;
-WS2812RingD=18;
+WS2812RingR=42/2;
 numLEDs=12;
-letter_size = 4;
+letter_size = 10;
 letter_height = topThick/2;
 font = "Liberation Sans";
 
@@ -33,18 +33,17 @@ difference() {
     // Big red Button
     translate([topWidth/2,topDepth/2,-1]) cylinder(h=topThick+2,d=BigRedButtonD);
     // toggle switch
-    translate([topWidth/4,topDepth/2,-1]) cylinder(h=topThick+2,d=ToggleD);
+    translate([topWidth/6,topDepth/2-6,-1]) cylinder(h=topThick+2,d=ToggleD);
     // disarmed LED
-    translate([topWidth/4,topDepth/4,-1]) cylinder(h=topThick+2,d=WS2812D);
+    translate([topWidth/6,topDepth/4,-1]) cylinder(h=topThick+2,d=WS2812D);
     // Armed LED
-    translate([topWidth/4,topDepth/4-10,-1]) cylinder(h=topThick+2,d=WS2812D);
+    translate([topWidth/6,topDepth/4-10,-1]) cylinder(h=topThick+2,d=WS2812D);
     //text
-    translate([topWidth/4-15,topDepth/4-10,(topThick/2)+.5]) letter("Armed");
-    translate([topWidth/4-15,topDepth/4,(topThick/2)+.5]) letter("DisArmed"); 
+    translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) letter("V 0.2");
     //LED ring
     translate([topWidth/2,topDepth/2,0])
         for ( i = [0 : 360/numLEDs : 360] ){
-            rotate([0, 0, i]) translate([0, WS2812RingD, -1]) cylinder(h=topThick+2,d=WS2812D);
+            rotate([0, 0, i]) translate([0, WS2812RingR, -1]) cylinder(h=topThick+2,d=WS2812D);
     }
 }
 
