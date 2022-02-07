@@ -168,5 +168,11 @@ Also this can later be adapted to make a holder for the led ring and potentially
 include::./3d/protoTypeStand.scad[]
 ----
 
-.3d stand STL (very first very draft iteration)
-image::./3d/Screenshot 2022-02-06 at 22.12.55.png[][]
+.3d stand STL (second iteration)
+image::./3d/Screenshot 2022-02-07 at 20.28.38.png[]
+
+The first test fitting worked well to show up some room for improvement:
+
+* Toggle switch moved left and down
+* legs longer
+* LED ring proper Radius

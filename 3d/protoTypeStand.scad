@@ -10,9 +10,11 @@ ToggleD=12;
 WS2812D=4;
 WS2812RingR=42/2;
 numLEDs=12;
+//versioning
 letter_size = 10;
 letter_height = topThick/2;
 font = "Liberation Sans";
+Version = "V 0.2" ;
 
 module letter(l) {
 	linear_extrude(height = letter_height) {
@@ -39,7 +41,7 @@ difference() {
     // Armed LED
     translate([topWidth/6,topDepth/4-10,-1]) cylinder(h=topThick+2,d=WS2812D);
     //text
-    translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) letter("V 0.2");
+    translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) letter(Version);
     //LED ring
     translate([topWidth/2,topDepth/2,0])
         for ( i = [0 : 360/numLEDs : 360] ){
@@ -47,4 +49,10 @@ difference() {
     }
 }
 
+//add a right side with holes for rotary encoders or wait?
+// wait?
+// the side will have two rotary encoders
+// one for Throttle and one for timewarp
+// add Leds on the top ( + / toggle-Key / - ) 
+// 3 LEDS for each encoder 
 
