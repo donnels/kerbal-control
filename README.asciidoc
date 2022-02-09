@@ -12,7 +12,7 @@
 A project to add some more control to the PS5 Kerbal simulation.
 
 .Screenshot from www.kerbalspaceprogram.com
-image::./images/kerbal.png[]
+image::./images/Kerbal.png[]
 
 * link:https://www.kerbalspaceprogram.com/[^]
 
