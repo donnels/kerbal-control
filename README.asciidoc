@@ -8,11 +8,14 @@
 :source-highlighter: rouge
 :title-page:
 
+== Starting point
 A project to add some more control to the PS5 Kerbal simulation.
+
+.Screenshot from www.kerbalspaceprogram.com
+image::./images/kerbal.png[]
 
 * link:https://www.kerbalspaceprogram.com/[^]
 
-== Starting point
 After installing Kerbal on the PS5 and playing it for a while it quickly became clear that the controllers alone are not enough to enjoy the game.
 The search began to find some way of improving things.
 Kerbal allows control vi the PS5 controllers AND via keyboard and mouse.
