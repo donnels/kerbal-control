@@ -1,45 +1,50 @@
-#include <KeyboardLayout.h>
-#include <Keyboard.h>
 
-const int buttonPin = 2;     // the number of the pushbutton pin
-const int ledPin =  13;      // the number of the LED pin
+const int buttonPin = 8;    
+const int ledPin = LED_BUILTIN;      
 
-// variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+int ledState = HIGH;        
+int buttonState;             
+int lastButtonState = LOW;   
 
+
+unsigned long lastDebounceTime = 0;  
+unsigned long debounceDelay = 5;   
 void setup() {
-  // initialize the LED pin as an output:
-  pinMode(ledPin, OUTPUT);
-  // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT);
-  //begins emulating a keyboard
-  Keyboard.begin();
-}
+  pinMode(ledPin, OUTPUT);
 
-void BRB_interrupt_handler() {
-  static unsigned long last_interrupt_time = 0;
-  unsigned long interrupt_time = millis();
-  if (interrupt_time - last_interrupt_time > 200)
-  {
-    // do thing here 
-  }
-  last_interrupt_time = interrupt_time;
+  Serial.begin(115200);
+ 
+  digitalWrite(ledPin, ledState);
 }
 
 void loop() {
-  // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  
+  int reading = digitalRead(buttonPin);
 
-  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
-  if (buttonState == HIGH) {
-    // turn LED on:
-    digitalWrite(ledPin, HIGH);
-    //press spacebar on a keyboard
-    Keyboard.press((char) 0x20);
-    delay(10);
-    Keyboard.releaseAll();
-  } else {
-    // turn LED off:
-    digitalWrite(ledPin, LOW);
+  
+  
+  if (reading != lastButtonState) {
+   
+    lastDebounceTime = millis();
   }
+
+  if ((millis() - lastDebounceTime) > debounceDelay) {
+    
+    if (reading != buttonState) {
+      buttonState = reading;
+ Serial.println("LOW");
+      if (buttonState == HIGH) {
+        ledState = !ledState;
+        
+ Serial.println("HIGH");
+      }
+    }
+  }
+
+  
+  digitalWrite(ledPin, ledState);
+
+  
+  lastButtonState = reading;
 }
