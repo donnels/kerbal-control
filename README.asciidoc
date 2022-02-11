@@ -93,8 +93,23 @@ Let's see if that works.
 .initial tests
 [source%linenums, c++]
 ----
-include::./button-test/button-test.ino[]
+include::./button-test/latching-button.ino[]
 ----
+
+The above code sort of works as a debounced latching button.
+The aim though is to read a debounced button and to read it's state changes.
+
+* ONLY when the button is pressed
+** output state ONCE
+* When button is released
+** Output state once
+
+.second test
+[source%linenums, c++]
+----
+TBD
+----
+
 
 .Example interrupt driven routine debounced
 [source%linenums, c++]
