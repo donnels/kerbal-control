@@ -93,7 +93,7 @@ Let's see if that works.
 .initial tests
 [source%linenums, c++]
 ----
-include::./button-test/latching-button.ino[]
+include::./button-test/button-test.ino[]
 ----
 
 The above code sort of works as a debounced latching button.
