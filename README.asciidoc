@@ -8,6 +8,18 @@
 :source-highlighter: rouge
 :title-page:
 
+== About this document
+
+.HTML version
+* link:https://donnels.github.io/kerbal-control/README.html[^]
+
+.PDF version
+* link:https://donnels.github.io/kerbal-control/README.pdf[^]
+
+.Github source
+* link:https://github.com/donnels/kerbal-control[^]
+
+
 == Starting point
 A project to add some more control to the PS5 Kerbal simulation.
 
