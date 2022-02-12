@@ -14,7 +14,7 @@ numLEDs=12;
 letter_size = 10;
 letter_height = topThick/2;
 font = "Liberation Sans";
-Version = "V 0.2" ;
+Version = "V 0.3" ;
 
 module letter(l) {
 	linear_extrude(height = letter_height) {
@@ -56,3 +56,26 @@ difference() {
 // add Leds on the top ( + / toggle-Key / - ) 
 // 3 LEDS for each encoder 
 
+module ringHolder() {
+    //module for led ring holder - DRAFT
+    holderH=2;
+    holderOutD=42;
+    holderInD=32;
+    holderFence=1;
+    holderFenceOutD=holderOutD+holderFence;
+    holderFenceInD=holderInD-holderFence;
+    difference() {
+        //holder ring
+        difference () {
+            cylinder(h=holderH+holderFence,d=holderFenceOutD);
+            translate([0,0,-1]) cylinder(h=holderH+holderFence+2,d=holderFenceInD);
+        }
+        //led ring for subtraction
+        translate([0,0,holderFence+1]) difference () {
+            cylinder(h=holderH,d=holderOutD);
+            translate([0,0,-1]) cylinder(h=holderH+2,d=holderInD);
+        }
+    }
+}
+//draft for now
+//ringHolder();
