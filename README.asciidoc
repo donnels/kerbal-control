@@ -125,6 +125,11 @@ include::./button-test2/button-test2.ino[]
 
 == Step 3 - bring things together to see how the loop runs with buttons
 
+[WARNING]
+====
+Work in Progress
+====
+
 .Second test with LED ring and leds plus 1 button
 [source%linenums, c++]
 ----
