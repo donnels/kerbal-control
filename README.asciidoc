@@ -116,10 +116,10 @@ The aim though is to read a debounced button and to read it's state changes.
 * When button is released
 ** Output state once
 
-.second test
+.second test with LED ring and leds plus 1 button
 [source%linenums, c++]
 ----
-TBD
+include::./fastled-test2/fastled-test2.ino[]
 ----
 
 
