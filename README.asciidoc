@@ -108,6 +108,12 @@ Let's see if that works.
 include::./button-test/button-test.ino[]
 ----
 
+.Why all the fuss about bounce?
+* link:https://en.wikipedia.org/wiki/Switch[^]
+
+.Example of bounce from the wikipedia
+image::./images/bounce.png
+
 The above code sort of works as a debounced latching button.
 The aim though is to read a debounced button and to read it's state changes.
 
