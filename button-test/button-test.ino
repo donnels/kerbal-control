@@ -1,3 +1,4 @@
+     
 const int buttonPin = 9;    
 const int ledPin = 13;      
 int ledState = HIGH;         
@@ -7,7 +8,7 @@ unsigned long lastDebounceTime = 0;
 unsigned long debounceDelay = 50;   
 
 void setup() {
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, ledState);
 }

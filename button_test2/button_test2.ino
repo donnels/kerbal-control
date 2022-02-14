@@ -33,11 +33,11 @@ void loop() {
     }
     if (buttonState == LOW ) {
       Serial.println("transition High2Low");
-      ledState = LOW
+      ledState = LOW;
     } 
     else {
       Serial.println("transition Low2High");
-      ledState = HIGH
+      ledState = HIGH;
     }
   }
   delay(500);
