@@ -55,13 +55,15 @@ start
       if (if ((millis() - lastDebounceTime) > debounceDelay))
         if (if (reading != buttonState))
           :buttonState = reading;
-          if (if (buttonState == HIGH))
-            :ledState = !ledState;
-            note left
-              This is a toggle
-              only toggle the LED if the new button state is HIGH
-            end note
-          endif
+	  partition debounced {
+          	if (if (buttonState == HIGH))
+            		:ledState = !ledState;
+            		note left
+              			This is a toggle
+              			only toggle the LED if the new button state is HIGH
+            		end note
+          	endif
+	  }
         endif
       endif
     }
