@@ -32,11 +32,15 @@ void loop() {
       Serial.println("transition");
     }
     if (buttonState == LOW ) {
-      ledState = !ledState;
       Serial.println("transition High2Low");
+      ledState = LOW
     } 
+    else {
+      Serial.println("transition Low2High");
+      ledState = HIGH
+    }
   }
   delay(500);
-  digitalWrite(ledPin, ledState);  
+  digitalWrite(ledPin,ledState);
   lastButtonState = reading;
 }
