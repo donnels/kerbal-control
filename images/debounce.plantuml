@@ -72,12 +72,9 @@ start
     	Set LED to the state in ledState
     end note
     :lastButtonState = reading;
- 
 
 legend
 Debounced button in main loop (armed/disarmed)
 end legend
-
-
 
 @enduml
