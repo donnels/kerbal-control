@@ -1,0 +1,81 @@
+@startuml
+title Debounced button as LED toggle
+footer (C)2022 Sean Donnellan, Fynn Donnellan
+
+skinparam activity {
+  StartColor black
+  BarColor black/blue
+  EndColor black
+  BackgroundColor #fff/green
+  DiamondBackgroundColor #fff/red
+  BorderColor black
+  BorderThickness 0
+}
+skinparam note {
+  BackgroundColor #fff/green
+}
+skinparam ArrowColor black
+skinparam BackgroundColor #aaf/fff
+skinparam legendBackgroundColor #fff/aaf
+skinparam LegendBorderThickness 0
+skinparam PartitionBackgroundColor #aaf/fff
+
+start
+  partition init {
+    :Variables;
+    note left
+      const int buttonPin = 2;
+      const int ledPin = 13;
+      int ledState = HIGH;
+      int buttonState;
+      int lastButtonState = LOW;
+      unsigned long lastDebounceTime = 0;
+      unsigned long debounceDelay = 50;
+    end note
+    :Void setup;
+    note left
+      void setup() {
+        pinMode(buttonPin, INPUT);
+        pinMode(ledPin, OUTPUT);
+        digitalWrite(ledPin, ledState);
+      }
+    end note
+  }
+	repeat
+	  :int reading = digitalRead(buttonPin);
+    partition timer {
+      if (if reading != lastbuttonstate) then (true)
+	    :lastDebounceTime = millis();
+      note left
+        reset the debouncing timer
+      end note
+      endif
+    }
+    partition debouncer {
+      if (if ((millis() - lastDebounceTime) > debounceDelay)) then (true)
+        if (if (reading != buttonState)) then (true)
+          :buttonState = reading;
+	        partition debounced {
+          	if (if (buttonState == HIGH)) then (true)
+            		:ledState = HIGH;
+            else (false)
+            		:ledState = LOW;
+          	endif
+	        }
+        endif
+      endif
+    }
+    :digitalWrite(ledPin, ledState);
+    note left
+    	Set LED to the state in ledState
+    end note
+    :lastButtonState = reading;
+ 
+
+legend
+Debounced button in main loop (armed/disarmed)
+end legend
+
+
+
+@enduml
