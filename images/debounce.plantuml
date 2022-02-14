@@ -66,6 +66,9 @@ start
       endif
     }
     :digitalWrite(ledPin, ledState);
+    note left
+    	Set LED to the state in ledState
+    end note
     :lastButtonState = reading;
  
 
