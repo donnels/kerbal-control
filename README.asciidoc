@@ -111,6 +111,9 @@ include::./button-test/button-test.ino[]
 The above code sort of works as a debounced latching button.
 The aim though is to read a debounced button and to read it's state changes.
 
+.activity diagram to show the flow
+image::./images/debounce.png[]
+
 * ONLY when the button is pressed
 ** output state ONCE
 * When button is released
