@@ -90,7 +90,7 @@ Just the space bar and maybe a toggle to arm it.
 
 .Resistor for pull down
 image::./images/resistor-10kohm.png[]
-We will need to pull down the pin for the button so the above resistor is included to show an example 10K Ohm resistor.
+We will need to pull down/up the pin for the button so the above resistor is included to show an example 10K Ohm resistor.
 
 .first buttons
 image::./images/Button-Triger-stage.jpeg[]
@@ -100,32 +100,36 @@ The big red button is to trigger a stage and the toggle switch is to arm it.
 .Very draft UI design
 image::./images/kerbal_ctrl_box_prototype.svg[]
 
+=== Bouncy Bouncy
+Why all the fuss about bounce? And what is it?
+
+* link:https://en.wikipedia.org/wiki/Switch[^]
+
+.Example of bounce from the wikipedia
+image::./images/bounce.png[]
+
+.activity diagram to show the flow
+image::./images/debounce.png[]
+
 Let's see if that works.
 
+=== first iteration
 .initial tests
 [source%linenums, c++]
 ----
 include::./button-test/button-test.ino[]
 ----
 
-.Why all the fuss about bounce?
-* link:https://en.wikipedia.org/wiki/Switch[^]
-
-.Example of bounce from the wikipedia
-image::./images/bounce.png[]
-
 The above code sort of works as a debounced latching button.
 The aim though is to read a debounced button and to read it's state changes.
 
-.activity diagram to show the flow
-image::./images/debounce.png[]
-
+.What we really need
 * ONLY when the button is pressed
 ** output state ONCE
 * When button is released
 ** Output state once
 
-
+=== Second iteration
 .Second button test non latching (armed/disarmed)
 [source%linenums, c++]
 ----
