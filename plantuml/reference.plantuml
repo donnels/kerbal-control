@@ -1,0 +1,35 @@
+@startuml plantuml-test-version
+version
+@enduml
+
+@startuml plantuml-test-testdot
+testdot
+@enduml
+
+@startuml plantuml-test-listfonts
+listfonts
+@enduml
+
+@startuml plantuml-test-listopeniconic
+listopeniconic
+@enduml
+
+@startuml plantuml-test-colors
+colors
+@enduml
+
+@startuml plantuml-test-help-skinparams
+help skinparams
+@enduml
+
+@startuml plantuml-test-skinparameters
+skinparameters
+@enduml
+
+@startuml plantuml-test-sequence
+Alice -> Bob: test
+@enduml
+
+@startuml plantuml-test-class
+A <|-- B
+@enduml

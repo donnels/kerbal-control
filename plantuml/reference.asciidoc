@@ -1,0 +1,68 @@
+= Simple plantuml test document
+:data-uri:
+:toc: right
+:icons: font
+:doctype: paper
+:sectnums:
+:sectnumlevels: 5
+:toclevels: 5
+
+== Document purpose
+This document pulls together results from plantuml testing.
+Plantuml allows for different tests to be performed to identify features and functions.
+Depending on the automated build platform you are using there my be an old version of plantuml installed and this document paired with the relevant plantuml file will identify some of the relvant information to identify why things may be going wrong.
+
+The original reason for this was that Github actions uses a LTS version (focal) of ubuntu which installs an old version of plantuml which does not build newer diagrams well. The document was use to identify this and also to test the fix by using a docker container.
+
+== Plantuml tests 
+
+=== version
+.version
+image::./plantuml-test-version.png[]
+
+=== testdot
+.testdot
+image::./plantuml-test-testdot.png[]
+
+=== listfonts
+.listfonts
+image::./plantuml-test-listfonts.png[]
+
+=== listopeniconic
+.listopeniconic
+image::./plantuml-test-listopeniconic.png[]
+
+=== colors
+.colors
+image::./plantuml-test-colors.png[]
+
+=== help skinparams
+.help skinparams
+image::./plantuml-test-help-skinparams.png[]
+
+=== skinparameters
+.skinparameters
+image::./plantuml-test-skinparameters.png[]
+
+=== sequence
+.sequence
+image::./plantuml-test-sequence.png[]
+
+=== class
+.class
+image::./plantuml-test-class.png[]
+
+[appendix]
+== plantuml information
+
+* link:https://en.wikipedia.org/wiki/PlantUML[^]
+
+
+[appendix]
+== Plantuml source used to test
+
+.Source plantuml test file
+[source,plantuml]
+----
+include::./reference.plantuml[]
+----
