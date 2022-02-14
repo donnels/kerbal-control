@@ -6,7 +6,7 @@ int buttonState;
 //unpressed is assumd            
 int lastButtonState;   
 unsigned long lastDebounceTime = 0;  
-unsigned long debounceDelay = 5;   
+unsigned long debounceDelay = 50;   
 
 void setup() {
   //default unpressed=HIGH
@@ -26,21 +26,20 @@ void loop() {
   if (reading != lastButtonState) {
     lastDebounceTime = millis();
   }
-  if ((millis() - lastDebounceTime) >= debounceDelay) {
+  if ((millis() - lastDebounceTime) > debounceDelay) {
     if (reading != buttonState) {
       buttonState = reading;
       Serial.println("transition");
-    }
-    if (buttonState == LOW ) {
-      Serial.println("transition High2Low");
-      ledState = LOW;
-    } 
-    else {
-      Serial.println("transition Low2High");
-      ledState = HIGH;
+      if (buttonState == LOW ) {
+        Serial.println("ARMED");
+        ledState = LOW;
+      } 
+      else {
+        Serial.println("DISARMED");
+        ledState = HIGH;
+      }
     }
   }
-  delay(500);
   digitalWrite(ledPin,ledState);
   lastButtonState = reading;
 }
