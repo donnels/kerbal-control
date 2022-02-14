@@ -1,6 +1,9 @@
 = kerbal-control
 :author: Sean Donnellan, Fynn Donnellan
 :toc: right
+:sectnums:
+:sectnumlevels: 5
+:toclevels: 5
 :data-uri: false
 :doctype: article
 :icons: font
