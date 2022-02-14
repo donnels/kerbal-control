@@ -149,6 +149,10 @@ The aim though is to read a debounced button and to read it's state changes.
 ** Output state once
 
 === Second iteration
+
+.activity diagram to show the flow
+image::./images/debounce2.png[]
+
 .Second button test non latching (armed/disarmed)
 [source%linenums, c++]
 ----

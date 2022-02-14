@@ -1,5 +1,5 @@
 @startuml
-title Debounced button as LED toggle
+title Debounced button as LED ARM/DISARM
 footer (C)2022 Sean Donnellan, Fynn Donnellan
 
 skinparam activity {
@@ -24,20 +24,29 @@ start
   partition init {
     :Variables;
     note left
-      const int buttonPin = 2;
-      const int ledPin = 13;
-      int ledState = HIGH;
-      int buttonState;
-      int lastButtonState = LOW;
-      unsigned long lastDebounceTime = 0;
-      unsigned long debounceDelay = 50;
+      const int buttonPin = 9;    
+      const int ledPin = LED_BUILTIN;    
+      //start with led OFF  
+      int ledState = LOW;        
+      int buttonState; 
+      //unpressed is assumd            
+      int lastButtonState;   
+      unsigned long lastDebounceTime = 0;  
+      unsigned long debounceDelay = 50; 
     end note
     :Void setup;
     note left
       void setup() {
-        pinMode(buttonPin, INPUT);
+        //default unpressed=HIGH
+        pinMode(buttonPin, INPUT_PULLUP);
         pinMode(ledPin, OUTPUT);
+        Serial.begin(115200);
         digitalWrite(ledPin, ledState);
+        int buttonState = digitalRead(buttonPin);
+        lastButtonState=buttonState;
+        Serial.println("setup complete");
+        Serial.print("Button is ");
+        Serial.println(buttonState);
       }
     end note
   }
@@ -55,11 +64,14 @@ start
       if (if ((millis() - lastDebounceTime) > debounceDelay)) then (true)
         if (if (reading != buttonState)) then (true)
           :buttonState = reading;
+          :Serial.println("transition");
 	        partition debounced {
-          	if (if (buttonState == HIGH)) then (true)
-            		:ledState = HIGH;
+          	if (if (buttonState == LOW)) then (true)
+            	:ledState = LOW;
+              :Serial.println("ARMED");
             else (false)
-            		:ledState = LOW;
+              :Serial.println("DISARMED");
+              :ledState = HIGH;
           	endif
 	        }
         endif
