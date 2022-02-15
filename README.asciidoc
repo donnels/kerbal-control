@@ -37,6 +37,8 @@ Kerbal allows control vi the PS5 controllers AND via keyboard and mouse.
 This means it should be possible to add some easy toggles/switches/rotary encoders to pass information to the game.
 The first switch would be the space bar which kerbal uses to trigger stages.
 
+While this is being developed for Kerbal it is generally a keyboard and can just as easily be used for many other applications, including video conferences.
+
 === kerbal key bindings
 The following is a list of key bindings we can work with.
 
