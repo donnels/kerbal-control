@@ -58,10 +58,9 @@ Because it's always good to have status LEDs an the WS2812 is one that is both e
 * link:https://github.com/FastLED/FastLED[^]
 * link:https://fastled.io/[^]
 
-The fastled library looks like a good choice although it doesn't (yet) support RGBW LEDs for which I have a LED ring.
-The other LED rings I have are less tightly packed with LEDs.
-As I have a few WS2812 strips on top of the one RGBW ring the choice went towards the WS2812 to be able to mix the strip and ring.
-RGBW is better suited to lighting anyway so let's use it for that later.
+The fastled library looks like a good choice.
+The WS2812 LED rings I have are not tightly packed with LEDs but will suffice.
+As I have a few WS2812 strips on top of the one RGBW ring and a few WS2812 rings the choice went towards the WS2812 to be able to mix the strip and ring.
 
 == Step 1 - First prototype
 To get started I went to an example for LEDs to be able to later set a LED with a key/button.
@@ -75,6 +74,7 @@ include::./fastled-test/fastled-test.ino[]
 [NOTE]
 ====
 The first test looks good and was tested on a 5v pro micro.
+The prototype uses a strip with ten LEDs attached to a ring with 12 LEDs.
 ====
 
 .Initial breadboard prototype with WS2812 ring and strip
@@ -82,6 +82,7 @@ image::./images/Prototype-led-ring-and-strip.jpeg[]
 
 The above code runs a LED around the ring and sets static colours on the strip.
 A good start.
+The animation works with delay which is probably not a good solution but works fine for a first test.
 
 == Step 2 - Attach a button to trigger a stage
 
@@ -230,8 +231,8 @@ Adding a LED ring around it sounds like a good idea.
 Adding a LED ring around a rotary encoder also sounds like a good idea (optional).
 
 === Arm/disarm toggle
-toggle disarmed:: Arm led LED green(?), latch ring red blink(?)
-toggle armed:: ARM led red, latch ring green
+toggle disarmed:: disArm led LED red(?), latch ring red blink(?)
+toggle armed:: ARM led green, latch ring green
 
 === Triger stage button
 unlatched:: ring green
@@ -258,3 +259,13 @@ The first test fitting worked well to show up some room for improvement:
 * Toggle switch moved left and down
 * legs longer
 * LED ring proper Radius
+
+[appendix]
+== openscad library for custom keycaps
+
+the following library allows the creation of keycaps in different sizes and shapes.
+since we'll be drilling the holes for any buttons round keycaps for cherry mx switches looks like a good option for keys.
+
+* link:https://github.com/rsheldiii/KeyV2[^]
+
+As there is a broken backlit keyboard lying around it will probably find itself devoid of some switches for this if they fit.
