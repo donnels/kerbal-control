@@ -22,32 +22,59 @@ module letter(l) {
 	}
 }
 
-//Legs are only needed during prototype phase
-translate([0,0,0]) cube([pillar,pillar,height]);
-translate([topWidth-pillar,0,0]) cube([pillar,pillar,height]);
-translate([topWidth-pillar,topDepth-pillar,0]) cube([pillar,pillar,height]);
-translate([0,topDepth-pillar,0]) cube([pillar,pillar,height]);
+module legs() {
+	//Legs are only needed during prototype phase
+	translate([0,0,0]) cube([pillar,pillar,height]);
+	translate([topWidth-pillar,0,0]) cube([pillar,pillar,height]);
+	translate([topWidth-pillar,topDepth-pillar,0]) cube([pillar,pillar,height]);
+	translate([0,topDepth-pillar,0]) cube([pillar,pillar,height]);
+}
+module boxTop() {
+	cube([topWidth,topDepth,topThick]);
+}
 
-//Top of the box for reference
-translate([0,0,height]) 
-difference() {
-    cube([topWidth,topDepth,topThick]);
-    // Big red Button
-    translate([topWidth/2,topDepth/2,-1]) cylinder(h=topThick+2,d=BigRedButtonD);
-    // toggle switch
-    translate([topWidth/6,topDepth/2-6,-1]) cylinder(h=topThick+2,d=ToggleD);
-    // disarmed LED
-    translate([topWidth/6,topDepth/4,-1]) cylinder(h=topThick+2,d=WS2812D);
-    // Armed LED
-    translate([topWidth/6,topDepth/4-10,-1]) cylinder(h=topThick+2,d=WS2812D);
-    //text
-    translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) letter(Version);
-    //LED ring
-    translate([topWidth/2,topDepth/2,0])
-        for ( i = [0 : 360/numLEDs : 360] ){
-            rotate([0, 0, i]) translate([0, WS2812RingR, -1]) cylinder(h=topThick+2,d=WS2812D);
+module bigRedButton() {
+	// Big red Button
+    cylinder(h=topThick+2,d=BigRedButtonD);
+}
+
+module toggleSwitch() {
+	// toggle switch
+    cylinder(h=topThick+2,d=ToggleD);
+}
+
+module LED() {
+	// disarmed LED
+    cylinder(h=topThick+2,d=WS2812D);
+}
+
+module LEDRing() {
+	//LED ring
+	for ( i = [0 : 360/numLEDs : 360] ){
+            rotate([0, 0, i]) translate([0, WS2812RingR, -1]) LED();
     }
 }
+module versioning() {
+	//text
+    letter(Version);
+}
+
+module testStand() {
+	legs();
+	translate([0,0,height]) 
+	difference() {
+		boxTop();
+		translate([topWidth/2,topDepth/2,-1]) bigRedButton();
+		translate([topWidth/6,topDepth/2-6,-1]) toggleSwitch();
+		translate([topWidth/6,topDepth/4,-1]) LED();
+		translate([topWidth/6,topDepth/4-10,-1]) LED();
+		translate([topWidth/2,topDepth/2,0]) LEDRing();
+		translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) versioning();
+	}
+}
+
+testStand();
+
 
 //add a right side with holes for rotary encoders or wait?
 // wait?
@@ -59,8 +86,8 @@ difference() {
 module ringHolder() {
     //module for led ring holder - DRAFT
     holderH=2;
-    holderOutD=42;
-    holderInD=32;
+    holderOutD=50;
+    holderInD=35;
     holderFence=1;
     holderFenceOutD=holderOutD+holderFence;
     holderFenceInD=holderInD-holderFence;
@@ -79,3 +106,4 @@ module ringHolder() {
 }
 //draft for now
 //ringHolder();
+//LEDRing();
