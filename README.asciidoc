@@ -116,7 +116,7 @@ image::./images/debounce.png[]
 
 ==== Interrupts
 "The Pro Micro has five external interrupts, which allow you to instantly trigger a function when a pin goes either high or low (or both). If you attach an interrupt to an interrupt-enabled pin, you'll need to know the specific interrupt that pin triggers: pin 3 maps to interrupt 0 (INT0), pin 2 is interrupt 1 (INT1), pin 0 is interrupt 2 (INT2), pin 1 is interrupt 3 (INT3), and pin 7 is interrupt 4 (INT6)."
--- link:https://learn.sparkfun.com[^| , pro micro hookup guide
+-- https://learn.sparkfun.com , pro micro hookup guide
 
 .Example interrupt driven routine debounced
 [source%linenums, c++]
