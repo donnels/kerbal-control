@@ -14,7 +14,7 @@ numLEDs=12;
 letter_size = 10;
 letter_height = topThick/2;
 font = "Liberation Sans";
-Version = "V 0.3" ;
+Version = "V3" ;
 
 module letter(l) {
 	linear_extrude(height = letter_height) {
