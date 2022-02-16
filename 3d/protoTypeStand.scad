@@ -43,6 +43,13 @@ module toggleSwitch() {
     cylinder(h=topThick+2,d=ToggleD);
 }
 
+module cherryKey() {
+	// toggle switch
+    cherryKeycap=18;
+    cherryClearance=cherryKeycap+1;
+    cylinder(h=topThick+2,d=cherryClearance);
+}
+
 module LED() {
 	// disarmed LED
     cylinder(h=topThick+2,d=WS2812D);
@@ -68,8 +75,13 @@ module testStand() {
 		translate([topWidth/6,topDepth/2-6,-1]) toggleSwitch();
 		translate([topWidth/6,topDepth/4,-1]) LED();
 		translate([topWidth/6,topDepth/4-10,-1]) LED();
+        //3 keys with circular keycaps chery MX clones
+        //keycaps have text on caps
+        translate([topWidth*.25,topDepth-(19/2)-7,-1]) cherryKey();
+        translate([topWidth*.5,topDepth-(19/2)-7,-1]) cherryKey();
+        translate([topWidth*.75,topDepth-(19/2)-7,-1]) cherryKey();
 		translate([topWidth/2,topDepth/2,0]) LEDRing();
-		translate([topWidth/2-10,topDepth-10,(topThick/2)+.5]) versioning();
+		translate([topWidth/2-10,+10,(topThick/2)+.5]) versioning();
 	}
 }
 
