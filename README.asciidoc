@@ -308,8 +308,13 @@ The painted part did look good though even if it didn't have time to dry.
 One question is what will the laser do with PLA.
 One question though is answered: The inlay looks good and sanding works well if combined with paint.
 
-.Closer look at the sanded surface
+.A closer look at the sanded surface (with a Wifi otoscope)
 image::./images/keycap-sanded.jpeg[]
 
 PLA doesn't look that nice when sanded.
-Maybe a lick of heat will help... it does and doesn't as it smooths and also shows up the layer lines again.
+The result of heat to the above key, while not shown, was uneven and unsatisfactory an probably requires more skill to do well so that the 2 minutes spent might have turned something better up if they had been 15 minutes. 
+Still the result of the 2 minutes with a gas torch showed that the layer lines will be highlighted through heating so that it probably only makes good sense for a flat surface or one with finer layer lines more closely spaced.
+There is probably room for experiments with solvents here also as others have had success with that.
+The laser option looks to probsbly be the one with a higher degree of repeatability and probably a better surface finish also through sanding and painting and sanding and painting and then lasering though tape and filling in the inlay with the tape in place.
+The laser will require some help with positioning so a printed MX key stalk on a positioning plate for a wainlux K6 laser will probably be designed and printed to assist as otherwise the sloped keys are likely to be misaligned through rotation more than X/Y position.
+Maybe something like this: link:https://www.thingiverse.com/thing:4718186[^]
