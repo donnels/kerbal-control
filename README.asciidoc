@@ -297,3 +297,6 @@ This was a quick and dirty print in low resolution for initial testing.
 
 The above approaches need to be tested but since printing key caps is easy enough now this also should be easy enough.
 It might involve printing a positioning guide to help align any laser cutting and that can be done at a later stage if required.
+
+.Sand-Paint-Sand (without waiting for the paint to dry)
+image::./images/sand-paint-sand.jpeg[]
