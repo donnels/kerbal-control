@@ -284,6 +284,8 @@ The above keycaps fit the MX clone switches we have and will work for prototypin
 To make them look like really high quality switches some post processing will be required.
 This was a quick and dirty print in low resolution for initial testing.
 
+=== Keycap post processing
+
 * One variant might be to print Caps with no inlay
 ** Sand with 1000+ grit 
 ** Paint
@@ -298,6 +300,7 @@ This was a quick and dirty print in low resolution for initial testing.
 The above approaches need to be tested but since printing key caps is easy enough now this also should be easy enough.
 It might involve printing a positioning guide to help align any laser cutting and that can be done at a later stage if required.
 
+==== Sand - Paint - Sand
 .Sand-Paint-Sand (without waiting for the paint to dry)
 image::./images/sand-paint-sand.jpeg[]
 
@@ -318,3 +321,20 @@ There is probably room for experiments with solvents here also as others have ha
 The laser option looks to probsbly be the one with a higher degree of repeatability and probably a better surface finish also through sanding and painting and sanding and painting and then lasering though tape and filling in the inlay with the tape in place.
 The laser will require some help with positioning so a printed MX key stalk on a positioning plate for a wainlux K6 laser will probably be designed and printed to assist as otherwise the sloped keys are likely to be misaligned through rotation more than X/Y position.
 Maybe something like this: link:https://www.thingiverse.com/thing:4718186[^]
+
+==== Laser engrave
+As described above using a laser to engrave the keycaps might be the road to a clean look.
+
+The first step is to print a cherry keycap holder.
+
+===== Cherry keycap holder
+This is a requirement to be able to position the key caps repeatably.
+
+.Openscad source
+[source,OPENSCAD]
+----
+include::./3d/cherry_keycap_holder.scad[]
+----
+
+.Screenshot of the keycap holder
+image::./images/cherry-keycap-holder.png[]
