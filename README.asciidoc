@@ -243,7 +243,7 @@ latched:: Ring orange
 == 3d printed test stand
 The Aim here is to have a stand to mount the buttons and LEDs to while testing.
 After testing this can be used as a template for drilling.
-Also this can later be adapted to make a holder for the led ring and potentially the leds that can be mounted under the lid of the box.
+Also this can later be adapted to make a holder for the led ring and potentially the LEDs that can be mounted under the lid of the box.
 
 .OpenScad source
 [source%linenums,openscad]
@@ -282,6 +282,12 @@ As there is a broken backlit keyboard lying around it will probably find itself 
 .draft keycaps with inlayed text for cherry mx (round)
 image::./images/keycaps.jpeg[]
 
+.Patch file for the above repo to make round keycaps
+[source,DIFF]
+----
+include::./3d/keycaps.patch[]
+----
+
 The above keycaps fit the MX clone switches we have and will work for prototyping.
 To make them look like really high quality switches some post processing will be required.
 This was a quick and dirty print in low resolution for initial testing.
@@ -317,12 +323,12 @@ One question though is answered: The inlay looks good and sanding works well if 
 image::./images/keycap-sanded.jpeg[]
 
 PLA doesn't look that nice when sanded.
-The result of heat to the above key, while not shown, was uneven and unsatisfactory an probably requires more skill to do well so that the 2 minutes spent might have turned something better up if they had been 15 minutes. 
+The result of heat to the above key, while not shown, was uneven and unsatisfactory and probably requires more skill to do well so that the 2 minutes spent might have turned something better up if they had been 15 minutes. 
 Still the result of the 2 minutes with a gas torch showed that the layer lines will be highlighted through heating so that it probably only makes good sense for a flat surface or one with finer layer lines more closely spaced.
 There is probably room for experiments with solvents here also as others have had success with that.
-The laser option looks to probsbly be the one with a higher degree of repeatability and probably a better surface finish also through sanding and painting and sanding and painting and then lasering though tape and filling in the inlay with the tape in place.
+The laser option looks to probably be the one with a higher degree of repeatability and probably a better surface finish also through sanding and painting and sanding and painting and then lasering though tape and filling in the inlay with the tape in place.
 The laser will require some help with positioning so a printed MX key stalk on a positioning plate for a wainlux K6 laser will probably be designed and printed to assist as otherwise the sloped keys are likely to be misaligned through rotation more than X/Y position.
-Maybe something like this: link:https://www.thingiverse.com/thing:4718186[^]
+Maybe something like this: link:https://www.thingiverse.com/thing:4712402[^]
 
 ==== Laser engraver approach
 As described above using a laser to engrave the keycaps might be the road to a clean look.
