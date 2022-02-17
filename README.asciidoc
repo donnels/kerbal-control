@@ -322,7 +322,7 @@ The laser option looks to probsbly be the one with a higher degree of repeatabil
 The laser will require some help with positioning so a printed MX key stalk on a positioning plate for a wainlux K6 laser will probably be designed and printed to assist as otherwise the sloped keys are likely to be misaligned through rotation more than X/Y position.
 Maybe something like this: link:https://www.thingiverse.com/thing:4718186[^]
 
-==== Laser engrave
+==== Laser engraver
 As described above using a laser to engrave the keycaps might be the road to a clean look.
 
 The first step is to print a cherry keycap holder.
