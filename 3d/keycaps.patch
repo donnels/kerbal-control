@@ -1,0 +1,73 @@
+diff --git a/keys.scad b/keys.scad
+index 768110e..aa6613f 100644
+--- a/keys.scad
++++ b/keys.scad
+@@ -9,7 +9,7 @@ include <./includes.scad>
+ 
+ 
+ // example key
+-dcs_row(5) legend("⇪", size=9) key();
++//dcs_row(5) legend("⇪", size=9) key();
+ 
+ // example row
+ /* for (x = [0:1:4]) {
+@@ -17,4 +17,25 @@ dcs_row(5) legend("⇪", size=9) key();
+ } */
+ 
+ // example layout
+-/* preonic_default("dcs"); */
+\ No newline at end of file
++/* preonic_default("dcs"); */
++
++union() {
++  // make the font smaller
++  $font_size = 3;
++  // top of keycap is the same size as the bottom
++  $width_difference = 0;
++  $height_difference = 0;
++  $key_shape_type="round";
++  $dish_type = "flat";
++  $height_slices = 10;
++  //$key_bump = "true";
++  // some keycap tops are slid backwards a little, and we don't want that
++  $top_skew = 0;
++  $support_type = "flared"; // [flared, bars, flat, disable]
++  $stem_support_type = "disable"; // [tines, brim, disabled]
++	
++  legends = ["SAS", "Gear", "View"];
++  for(x=[0:len(legends)-1]) {
++    translate_u(x) cherry(0) legend(legends[x], size=4) key();
++  }
++}
+\ No newline at end of file
+diff --git a/src/shapes.scad b/src/shapes.scad
+index 206727e..8fe8aa6 100644
+--- a/src/shapes.scad
++++ b/src/shapes.scad
+@@ -6,6 +6,7 @@ include <shapes/sculpted_square.scad>
+ include <shapes/rounded_square.scad>
+ include <shapes/square.scad>
+ include <shapes/oblong.scad>
++include <shapes/round.scad>
+ 
+ // size: at progress 0, the shape is supposed to be this size
+ // delta: at progress 1, the keycap is supposed to be size - delta
+@@ -25,6 +26,8 @@ module key_shape(size, delta, progress = 0) {
+     square_shape(size, delta, progress);
+   } else if ($key_shape_type == "oblong") {
+     oblong_shape(size, delta, progress);
++  } else if ($key_shape_type == "round") {
++   round_shape(size, delta, progress);
+   } else {
+     echo("Warning: unsupported $key_shape_type");
+   }
+diff --git a/src/shapes/round.scad b/src/shapes/round.scad
+new file mode 100644
+index 0000000..62da4cd
+--- /dev/null
++++ b/src/shapes/round.scad
+@@ -0,0 +1,3 @@
++module round_shape(size, delta, progress){
++  rotate([0,0,22.5]) circle(d=size[0] - delta[0], $fn=360);
++}
+\ No newline at end of file
