@@ -277,6 +277,8 @@ since we'll be drilling the holes for any buttons round keycaps for cherry mx sw
 
 As there is a broken backlit keyboard lying around it will probably find itself devoid of some switches for this if they fit.
 
+=== Raw keycap print
+
 .draft keycaps with inlayed text for cherry mx (round)
 image::./images/keycaps.jpeg[]
 
@@ -322,13 +324,16 @@ The laser option looks to probsbly be the one with a higher degree of repeatabil
 The laser will require some help with positioning so a printed MX key stalk on a positioning plate for a wainlux K6 laser will probably be designed and printed to assist as otherwise the sloped keys are likely to be misaligned through rotation more than X/Y position.
 Maybe something like this: link:https://www.thingiverse.com/thing:4718186[^]
 
-==== Laser engraver
+==== Laser engraver approach
 As described above using a laser to engrave the keycaps might be the road to a clean look.
 
 The first step is to print a cherry keycap holder.
 
 ===== Cherry keycap holder
 This is a requirement to be able to position the key caps repeatably.
+And this would have been good for the spray painting of the first cap too (maybe a bit higher).
+Since the keycap is slightly slanted this holder should probably account for that (V1 doesn't).
+The laser engraving should work fine none the less and if not the slant will be adapted to the holder also.
 
 .Openscad source
 [source,OPENSCAD]
@@ -338,3 +343,15 @@ include::./3d/cherry_keycap_holder.scad[]
 
 .Screenshot of the keycap holder
 image::./images/cherry-keycap-holder.png[]
+
+.The next steps (ToDo)
+* Print a blank keycap
+* Repeat as required:
+** Sand the keycap (1000 Grit or higher)
+** Spray paint the cap (1st coat with filler?)
+* Mask the cap with tape
+* Laser engrave
+* Fill inlay
+* Remove tape
+* Optionally add clear coat 
+
