@@ -300,3 +300,16 @@ It might involve printing a positioning guide to help align any laser cutting an
 
 .Sand-Paint-Sand (without waiting for the paint to dry)
 image::./images/sand-paint-sand.jpeg[]
+
+From this initial very fast test it looks like the laser option is getting more likely.
+Because the keycap is sloped the sanding uncovers the slope lines and, because we're hand sanding, unevenly.
+This leaves a slight artefact that would ideally beg for a coat of paint which would cover the inlay again so the simple sand - paint - sand option doesn't look that good.
+The painted part did look good though even if it didn't have time to dry.
+One question is what will the laser do with PLA.
+One question though is answered: The inlay looks good and sanding works well if combined with paint.
+
+.Closer look at the sanded surface
+image::./images/keycap-sanded.jpeg[]
+
+PLA doesn't look that nice when sanded.
+Maybe a lick of heat will help... it does and doesn't as it smooths and also shows up the layer lines again.
