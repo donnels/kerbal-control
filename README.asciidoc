@@ -22,7 +22,6 @@
 .Github source
 * link:https://github.com/donnels/kerbal-control[^]
 
-
 == Starting point
 A project to add some more control to the PS5 Kerbal simulation.
 
@@ -357,6 +356,9 @@ include::./3d/cherry_keycap_holder.scad[]
 
 .Screenshot of the keycap holder
 image::./images/cherry-keycap-holder.png[]
+
+.And the 5° tilted V2
+image::./images/2022-02-18T14-46%3A09-576Z.png[] 
 
 .The next steps (ToDo)
 * Print a blank keycap

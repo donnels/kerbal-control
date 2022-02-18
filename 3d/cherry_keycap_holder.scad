@@ -5,6 +5,7 @@ cross_y = 1.31;
 cross_z = 3.6;
 cross_tolerance = 0.2;
 plate_z = 2 ;
+key_slope = 5 ; // 5 degrees approx.
 
 //versioning
 letter_size = 8;
@@ -21,7 +22,7 @@ difference() {
     cube([20,20,plate_z],center=true);
     translate([0,5,plate_z/4]) letter(Version);
 }
-translate([0,0,plate_z/2+cross_z/2]){
+translate([0,0,plate_z/2+cross_z/2]) rotate([-5,0,0]) {
     cube([cross_y-cross_tolerance, cross_x-cross_tolerance, cross_z*2], center=true);
     cube([cross_x-cross_tolerance, cross_y-cross_tolerance, cross_z*2], center=true);
 }
