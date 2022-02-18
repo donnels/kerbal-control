@@ -294,6 +294,12 @@ The above keycaps fit the MX clone switches we have and will work for prototypin
 To make them look like really high quality switches some post processing will be required.
 This was a quick and dirty print in low resolution for initial testing.
 
+.Potential problem with clearance
+image::./images/keyAndCapMokup.jpeg[]
+
+Just to be sure the above mokup key was printed and it turns out there might be a clearance problem with the switch housing.
+It was not as apparent when test fitting to the switch as it was between other keys.
+
 === Keycap post processing
 
 * One variant might be to print Caps with no inlay
