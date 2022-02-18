@@ -11,7 +11,7 @@ key_slope = 5 ; // 5 degrees approx.
 letter_size = 8;
 letter_height = 2;
 font = "Liberation Sans";
-Version = "V1" ;
+Version = "V2" ;
 
 module letter(l) {
 	linear_extrude(height = letter_height) {
