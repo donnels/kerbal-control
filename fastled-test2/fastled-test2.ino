@@ -50,12 +50,51 @@ void setup() {
     Serial.println("setup complete");
 }
 
+void setup() {
+  //default unpressed=HIGH
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(115200);
+  digitalWrite(ledPin, ledState);
+  int buttonState = digitalRead(buttonPin);
+  lastButtonState=buttonState;
+  Serial.println("setup complete");
+  Serial.print("Button is ");
+  Serial.println(buttonState);
+}
+
 void loop() {
-    for(int dot = 0; dot < NUM_RING_LEDS; dot++) { 
-        leds[dot] = CHSV(64, 255, 16);
-        FastLED.show();
-        // clear this led for the next time around the loop
-        leds[dot] = CRGB::Black;
-        delay(150);
+  int reading = digitalRead(buttonPin);
+  if (reading != lastButtonState) {
+    lastDebounceTime = millis();
+  }
+  if ((millis() - lastDebounceTime) > debounceDelay) {
+    if (reading != buttonState) {
+      buttonState = reading;
+      Serial.println("transition");
+      if (buttonState == LOW ) {
+        Serial.println("ARMED");
+        ledState = LOW;
+        leds[disarmed_LED] = CRGB::Red;
+        leds[armed_LED] = CRGB::Black;
+        leds[SAS_LED] = CRGB::Black
+        leds[rot1p_LED] = CRGB::Black
+        leds[rot1m_LED] = CRGB::Black;
+        leds[rot1b_LED] = CRGB::Black;
+        leds[18] = CRGB::Black;
+        leds[19] = CRGB::Black;
+        leds[20] = CRGB::Black;
+        leds[21] = CRGB::Black;
+        FastLED.show;
+      } 
+      else {
+        Serial.println("DISARMED");
+        ledState = HIGH;
+        leds[armed_LED] = CRGB::Green;
+        FastLED.show;
+      }
     }
+  }
+  digitalWrite(ledPin,ledState);
+  lastButtonState = reading;
 }
