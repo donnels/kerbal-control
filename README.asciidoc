@@ -202,7 +202,6 @@ include::./fastled-test2/fastled-test2.ino[]
 .An initial example with interrupts
 * link:https://gist.github.com/dkgrieshammer/66cce6ec92a6427c16804df84c22cc83[^]
 
-
 [appendix]
 == Requirements
 
@@ -265,8 +264,6 @@ The first test fitting worked well to show up some room for improvement:
 image::./images/v2PlusButtons.jpeg[]
 
 The intial V2 print populated with additional key caps placed to show approximate position of possible keys for later.
-
-
 
 [appendix]
 == openscad library for custom keycaps
@@ -370,4 +367,3 @@ image::./images/2022-02-18T14-46%3A09-576Z.png[]
 * Fill inlay
 * Remove tape
 * Optionally add clear coat 
-
