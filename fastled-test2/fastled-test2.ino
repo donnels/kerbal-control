@@ -71,6 +71,5 @@ void loop() {
     }
   }
   FastLED.show();
-  digitalWrite(ledPin,ledState);
   lastButtonState = reading;
 }
