@@ -39,7 +39,6 @@ void setup() {
   //button stuff
   //default unpressed=HIGH
   pinMode(buttonPin, INPUT_PULLUP);
-  digitalWrite(ledPin, ledState);
   int buttonState = digitalRead(buttonPin);
   lastButtonState=buttonState;
   //The rest
