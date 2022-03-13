@@ -27,8 +27,8 @@ void setup() {
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
   leds[disarmed_LED] = CRGB::Red;
   leds[armed_LED] = CRGB::Black;
-  leds[SAS_LED] = CRGB::Black
-  leds[rot1p_LED] = CRGB::Black
+  leds[SAS_LED] = CRGB::Black;
+  leds[rot1p_LED] = CRGB::Black;
   leds[rot1m_LED] = CRGB::Black;
   leds[rot1b_LED] = CRGB::Black;
   //spare
@@ -66,8 +66,8 @@ void loop() {
         ledState = LOW;
         leds[disarmed_LED] = CRGB::Red;
         leds[armed_LED] = CRGB::Black;
-        leds[SAS_LED] = CRGB::Black
-        leds[rot1p_LED] = CRGB::Black
+        leds[SAS_LED] = CRGB::Black;
+        leds[rot1p_LED] = CRGB::Black;
         leds[rot1m_LED] = CRGB::Black;
         leds[rot1b_LED] = CRGB::Black;
         leds[18] = CRGB::Black;
