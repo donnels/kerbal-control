@@ -79,6 +79,15 @@ void loop() {
         Serial.println("DISARMED");
         ledState = HIGH;
         leds[armed_LED] = CRGB::Green;
+        leds[disarmed_LED] = CRGB::Black;;
+        leds[SAS_LED] = CRGB::Black;
+        leds[rot1p_LED] = CRGB::Black;
+        leds[rot1m_LED] = CRGB::Black;
+        leds[rot1b_LED] = CRGB::Black;
+        leds[18] = CRGB::Black;
+        leds[19] = CRGB::Black;
+        leds[20] = CRGB::Black;
+        leds[21] = CRGB::Black;
       }
     }
   }
