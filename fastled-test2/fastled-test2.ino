@@ -12,10 +12,8 @@
 CRGB leds[NUM_LEDS];
 
 //button stuff
-const int buttonPin = 8;    
-const int ledPin = LED_BUILTIN;    
-//start with led OFF  
-int ledState = LOW;        
+const int buttonPin = 8;      
+//start with led OFF         
 int buttonState; 
 //unpressed is assumd            
 int lastButtonState;   
@@ -41,7 +39,6 @@ void setup() {
   //button stuff
   //default unpressed=HIGH
   pinMode(buttonPin, INPUT_PULLUP);
-  pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, ledState);
   int buttonState = digitalRead(buttonPin);
   lastButtonState=buttonState;
@@ -63,13 +60,11 @@ void loop() {
       Serial.println("transition");
       if (buttonState == LOW ) {
         Serial.println("ARMED");
-        ledState = LOW;
         leds[disarmed_LED] = CRGB::Red;
         leds[armed_LED] = CRGB::Black;
       } 
       else {
         Serial.println("DISARMED");
-        ledState = HIGH;
         leds[armed_LED] = CRGB::Green;
         leds[disarmed_LED] = CRGB::Black;;
       }
