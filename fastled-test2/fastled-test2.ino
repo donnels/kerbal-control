@@ -19,10 +19,13 @@ int buttonState;
 int lastButtonState;   
 unsigned long lastDebounceTime = 0;  
 unsigned long debounceDelay = 5;   
+//LED brightness stuff
+int brightness = 5;
 
 void setup() { 
   //LED stuff
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
+  FastlED.brightness(brightness);
   leds[disarmed_LED] = CRGB::Red;
   leds[armed_LED] = CRGB::Black;
   leds[SAS_LED] = CRGB::Black;
