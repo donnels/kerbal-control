@@ -74,16 +74,15 @@ void loop() {
         leds[19] = CRGB::Black;
         leds[20] = CRGB::Black;
         leds[21] = CRGB::Black;
-        FastLED.show;
       } 
       else {
         Serial.println("DISARMED");
         ledState = HIGH;
         leds[armed_LED] = CRGB::Green;
-        FastLED.show;
       }
     }
   }
+  FastLED.show();
   digitalWrite(ledPin,ledState);
   lastButtonState = reading;
 }
