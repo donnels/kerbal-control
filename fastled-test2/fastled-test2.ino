@@ -26,7 +26,7 @@ void setup() {
   //LED stuff
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
   FastLED.setBrightness(brightness);
-  leds[disarmed_LED] = CRGB::Red;
+  leds[disarmed_LED] = CRGB::Blue;
   leds[armed_LED] = CRGB::Black;
   leds[SAS_LED] = CRGB::Black;
   leds[rot1p_LED] = CRGB::Black;
