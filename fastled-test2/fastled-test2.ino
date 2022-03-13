@@ -25,7 +25,7 @@ int brightness = 5;
 void setup() { 
   //LED stuff
   FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
-  FastlED.brightness(brightness);
+  FastLED.brightness(brightness);
   leds[disarmed_LED] = CRGB::Red;
   leds[armed_LED] = CRGB::Black;
   leds[SAS_LED] = CRGB::Black;
