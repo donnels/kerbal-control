@@ -14,9 +14,9 @@ CRGB leds[NUM_LEDS];
 //button stuff
 const int buttonPin = 8;      
 //start with led OFF         
-int buttonState; 
+int armButtonState; 
 //unpressed is assumd            
-int lastButtonState;   
+int lastarmButtonState;   
 unsigned long lastDebounceTime = 0;  
 unsigned long debounceDelay = 5;   
 //LED brightness stuff
@@ -42,25 +42,25 @@ void setup() {
   //button stuff
   //default unpressed=HIGH
   pinMode(buttonPin, INPUT_PULLUP);
-  int buttonState = digitalRead(buttonPin);
-  lastButtonState=buttonState;
+  int armButtonState = digitalRead(buttonPin);
+  lastarmButtonState=armButtonState;
   //The rest
   Serial.begin(115200);
   Serial.println("setup complete");
   Serial.print("Button is ");
-  Serial.println(buttonState);
+  Serial.println(armButtonState);
 }
 
 void loop() {
   int reading = digitalRead(buttonPin);
-  if (reading != lastButtonState) {
+  if (reading != lastarmButtonState) {
     lastDebounceTime = millis();
   }
   if ((millis() - lastDebounceTime) > debounceDelay) {
-    if (reading != buttonState) {
-      buttonState = reading;
+    if (reading != armButtonState) {
+      armButtonState = reading;
       Serial.println("transition");
-      if (buttonState == LOW ) {
+      if (armButtonState == HIGH ) {
         Serial.println("ARMED");
         leds[disarmed_LED] = CRGB::Red;
         leds[armed_LED] = CRGB::Black;
@@ -72,6 +72,7 @@ void loop() {
       }
     }
   }
+
   FastLED.show();
-  lastButtonState = reading;
+  lastarmButtonState = reading;
 }
