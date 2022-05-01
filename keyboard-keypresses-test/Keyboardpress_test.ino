@@ -3,7 +3,7 @@
 
 const int buttonPin = 9;       
 //start with led OFF        
-1int buttonState; 
+int buttonState; 
 //unpressed is assumd            
 int lastButtonState;   
 unsigned long lastDebounceTime = 0;  
