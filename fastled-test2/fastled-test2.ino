@@ -18,7 +18,7 @@ int armButtonState;
 //unpressed is assumd            
 int lastarmButtonState;   
 unsigned long lastDebounceTime = 0;  
-unsigned long debounceDelay = 5;   
+unsigned long debounceDelay = 12;   
 //LED brightness stuff
 int brightness = 5;
 
