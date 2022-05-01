@@ -1,8 +1,7 @@
 #include <KeyboardLayout.h>
 #include <Keyboard.h>
 
-const int buttonPin = 9;       
-//start with led OFF        
+const int buttonPin = 9;             
 int buttonState; 
 //unpressed is assumd            
 int lastButtonState;   
