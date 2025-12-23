@@ -186,16 +186,13 @@ Serial monitor was used to check the function.
 
 == Step 3 - bring things together to see how the loop runs with buttons
 
-[WARNING]
-====
-Work in Progress
-====
-
-.Second test with LED ring and leds plus 1 button
+.Integrated controller with LEDs, arm/disarm button, and stage button
 [source%linenums, c++]
 ----
-include::./fastled-test2/fastled-test2.ino[]
+include::./kerbal-controller.ino[]
 ----
+
+This MVP integrates LEDs for status, debounced buttons, and keyboard emulation for staging.
 
 == Step 4 - rotary encoders
 
@@ -367,3 +364,14 @@ image::./images/2022-02-18T14-46%3A09-576Z.png[]
 * Fill inlay
 * Remove tape
 * Optionally add clear coat 
+
+[appendix]
+== Current Progress and Next Steps
+
+Code written. Compiled clean. USB fails. ISP wired. Ready to burn. Board waits. Test next.
+
+- MVP controller code integrated in [`kerbal-controller.ino`](kerbal-controller.ino).
+- Compiled successfully on Pi Zero using Arduino CLI.
+- USB programming blocked by hardware issues; switched to ISP via avrdude.
+- Wiring: Pi GPIOs to Pro Micro ISP header for SPI programming.
+- Next: Upload via ISP, test in Kerbal Space Program.

@@ -102,5 +102,4 @@ void flashStageLED() {
   FastLED.show();
   delay(200);
   updateLEDs();
-}</content>
-<parameter name="filePath">/home/deck/Documents/Github/donnels/kerbal-control/kerbal-controller.ino
+}
