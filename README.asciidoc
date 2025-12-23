@@ -1,5 +1,5 @@
 = kerbal-control
-:author: Sean Donnellan, Fynn Donnellan
+:author: Sean Donnellan, Oscar Donnellan, Fynn Donnellan
 :toc: right
 :sectnums:
 :sectnumlevels: 5
