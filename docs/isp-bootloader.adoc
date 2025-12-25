@@ -1,0 +1,41 @@
+= Burning a New Bootloader via ISP
+:toc:
+:sectnums:
+
+This guide describes how to burn a new bootloader onto the Arduino Pro Micro using ISP (In-System Programming), as required for board recovery or when USB programming fails.
+
+== Prerequisites
+* [ ] Raspberry Pi (Zero or other) with GPIO header
+* [x] USBtinyISP or similar ISP programmer
+* [x] Arduino Pro Micro (5V)
+* [x] Required wiring (see schematic)
+* [x] External USB power for Pro Micro (critical!)
+* [x] avrdude installed on the Pi
+* [x] Caterina-Leonardo bootloader hex file (from Arduino IDE or online)
+
+== Wiring
+- Connect Pi GPIOs (via ISP programmer) to Pro Micro ISP header:
+  - MISO, MOSI, SCK, RESET, VCC, GND
+- Connect Pro Micro to USB power (do NOT rely on Pi power alone)
+
+== Steps
+. Power the Pro Micro via USB (do not skip!)
+. Connect ISP programmer to Pi and Pro Micro.
+. On the Pi, run:
++
+----
+avrdude -c usbtiny -p m32u4 -U flash:w:Caterina-Leonardo.hex:i -U lfuse:w:0xff:m -U hfuse:w:0xd8:m -U efuse:w:0xcb:m
+----
+. Wait for avrdude to complete without errors.
+. Disconnect ISP and USB, reconnect Pro Micro to host via USB.
+. Board should now be programmable via USB again.
+
+== Troubleshooting
+- If you see `device signature = 0x000000`, the Pro Micro is not powered. Connect USB power.
+- Double-check all wiring and fuse settings.
+- See README for more details and schematic images.
+
+== References
+- https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide#installing-bootloader
+- https://www.arduino.cc/en/Hacking/Bootloader
+

@@ -1,0 +1,191 @@
+@startuml 
+title Pinout for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam cardbackgroundColor #fff/aaf
+skinparam Padding 0
+
+skinparam Shadowing 1
+'' Right side labels (row 1: from label2 to label1 to pin)
+card "TX0" as pin.1.label.1
+card "Serial TX" as pin.1.label.2
+card "RX1" as pin.2.label.1
+card "Serial RX" as pin.2.label.2
+card "GND" as pin.3.label.1
+card "Ground" as pin.3.label.2
+card "GND" as pin.4.label.1
+card "Ground" as pin.4.label.2
+card "2" as pin.5.label.1
+card "Digital I/O" as pin.5.label.2
+card "3" as pin.6.label.1
+card "Digital I/O" as pin.6.label.2
+card "4" as pin.7.label.1
+card "Digital I/O" as pin.7.label.2
+card "5" as pin.8.label.1
+card "Digital I/O" as pin.8.label.2
+card "6" as pin.9.label.1
+card "Digital I/O" as pin.9.label.2
+card "7" as pin.10.label.1
+card "Digital I/O" as pin.10.label.2
+card "8" as pin.11.label.1
+card "Digital I/O" as pin.11.label.2
+card "9" as pin.12.label.1
+card "Digital I/O" as pin.12.label.2
+
+'' Left side labels (row 2: from pin to label1 to label2)
+card "RAW" as pin.13.label.1
+card "Unregulated voltage" as pin.13.label.2
+card "GND" as pin.14.label.1
+card "Ground" as pin.14.label.2
+card "RST" as pin.15.label.1
+card "Reset (active low)" as pin.15.label.2
+card "VCC" as pin.16.label.1
+card "Regulated 5V" as pin.16.label.2
+card "A3" as pin.17.label.1
+card "Analog input" as pin.17.label.2
+card "A2" as pin.18.label.1
+card "Analog input" as pin.18.label.2
+card "A1" as pin.19.label.1
+card "Analog input" as pin.19.label.2
+card "A0" as pin.20.label.1
+card "Analog input" as pin.20.label.2
+card "15" as pin.21.label.1
+card "SPI SCK" as pin.21.label.2
+card "14" as pin.22.label.1
+card "SPI MISO" as pin.22.label.2
+card "16" as pin.23.label.1
+card "SPI MOSI" as pin.23.label.2
+card "10" as pin.24.label.1
+card "Digital I/O" as pin.24.label.2
+
+''Pins
+    interface "pin 1" as pin.1 #Yellow
+    interface "pin 2" as pin.2 #Yellow
+    interface "pin 3" as pin.3 #Black
+    interface "pin 4" as pin.4 #Black
+    interface "pin 5" as pin.5 #Blue
+    interface "pin 6" as pin.6 #Blue
+    interface "pin 7" as pin.7 #Blue
+    interface "pin 8" as pin.8 #Blue
+    interface "pin 9" as pin.9 #Blue
+    interface "pin 10" as pin.10 #Blue
+    interface "pin 11" as pin.11 #Blue
+    interface "pin 12" as pin.12 #Blue
+    interface "pin 13" as pin.13 #Orange
+    interface "pin 14" as pin.14 #Black
+    interface "pin 15" as pin.15 #Gray
+    interface "pin 16" as pin.16 #Red
+    interface "pin 17" as pin.17 #Green
+    interface "pin 18" as pin.18 #Green
+    interface "pin 19" as pin.19 #Green
+    interface "pin 20" as pin.20 #Green
+    interface "pin 21" as pin.21 #Purple
+    interface "pin 22" as pin.22 #Purple
+    interface "pin 23" as pin.23 #Purple
+    interface "pin 24" as pin.24 #Blue
+
+''binding first pin of row1 to first pin of row2
+pin.1 -[hidden]> pin.13
+pin.2 -[hidden]> pin.14
+pin.3 -[hidden]> pin.15
+pin.4 -[hidden]> pin.16
+pin.5 -[hidden]> pin.17
+pin.6 -[hidden]> pin.18
+pin.7 -[hidden]> pin.19
+pin.8 -[hidden]> pin.20
+pin.9 -[hidden]> pin.21
+pin.10 -[hidden]> pin.22
+pin.11 -[hidden]> pin.23
+pin.12 -[hidden]> pin.24
+
+''row 1 (right side)
+pin.1 --[hidden]> pin.2
+pin.2 --[hidden]> pin.3
+pin.3 --[hidden]> pin.4
+pin.4 --[hidden]> pin.5
+pin.5 --[hidden]> pin.6
+pin.6 --[hidden]> pin.7
+pin.7 --[hidden]> pin.8
+pin.8 --[hidden]> pin.9
+pin.9 --[hidden]> pin.10
+pin.10 --[hidden]> pin.11
+pin.11 --[hidden]> pin.12
+
+'row 1 labels "label2 to label 1 to pin"
+pin.1.label.2 - pin.1.label.1
+pin.1.label.1 - pin.1
+pin.2.label.2 - pin.2.label.1
+pin.2.label.1 - pin.2
+pin.3.label.2 - pin.3.label.1
+pin.3.label.1 - pin.3
+pin.4.label.2 - pin.4.label.1
+pin.4.label.1 - pin.4
+pin.5.label.2 - pin.5.label.1
+pin.5.label.1 - pin.5
+pin.6.label.2 - pin.6.label.1
+pin.6.label.1 - pin.6
+pin.7.label.2 - pin.7.label.1
+pin.7.label.1 - pin.7
+pin.8.label.2 - pin.8.label.1
+pin.8.label.1 - pin.8
+pin.9.label.2 - pin.9.label.1
+pin.9.label.1 - pin.9
+pin.10.label.2 - pin.10.label.1
+pin.10.label.1 - pin.10
+pin.11.label.2 - pin.11.label.1
+pin.11.label.1 - pin.11
+pin.12.label.2 - pin.12.label.1
+pin.12.label.1 - pin.12
+
+''row 2 (left side)
+pin.13 -[hidden]-> pin.14
+pin.14 --[hidden]> pin.15
+pin.15 --[hidden]> pin.16
+pin.16 --[hidden]> pin.17
+pin.17 --[hidden]> pin.18
+pin.18 --[hidden]> pin.19
+pin.19 --[hidden]> pin.20
+pin.20 --[hidden]> pin.21
+pin.21 --[hidden]> pin.22
+pin.22 --[hidden]> pin.23
+pin.23 --[hidden]> pin.24
+
+'row 2 labels (pin to label1 to label2)
+pin.13 - pin.13.label.1
+pin.13.label.1 - pin.13.label.2
+pin.14 - pin.14.label.1
+pin.14.label.1 - pin.14.label.2
+pin.15 - pin.15.label.1
+pin.15.label.1 - pin.15.label.2
+pin.16 - pin.16.label.1
+pin.16.label.1 - pin.16.label.2
+pin.17 - pin.17.label.1
+pin.17.label.1 - pin.17.label.2
+pin.18 - pin.18.label.1
+pin.18.label.1 - pin.18.label.2
+pin.19 - pin.19.label.1
+pin.19.label.1 - pin.19.label.2
+pin.20 - pin.20.label.1
+pin.20.label.1 - pin.20.label.2
+pin.21 - pin.21.label.1
+pin.21.label.1 - pin.21.label.2
+pin.22 - pin.22.label.1
+pin.22.label.1 - pin.22.label.2
+pin.23 - pin.23.label.1
+pin.23.label.1 - pin.23.label.2
+pin.24 - pin.24.label.1
+pin.24.label.1 - pin.24.label.2
+
+legend
+|= Color |= Function |
+| <back:black><color:black>"   " | GND (Ground) |
+| <back:red><color:red>"   " | VCC (Power) |
+| <back:green><color:green>"   " | Analog Input |
+| <back:blue><color:blue>"   " | Digital I/O |
+| <back:yellow><color:yellow>"   " | Serial (TX/RX) |
+| <back:purple><color:purple>"   " | SPI |
+| <back:gray><color:gray>"   " | Reset |
+| <back:orange><color:orange>"   " | RAW (Unregulated) |
+endlegend
+
+@enduml

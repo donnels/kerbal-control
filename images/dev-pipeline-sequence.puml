@@ -1,0 +1,49 @@
+@startuml
+skinparam BackgroundColor #fff/aaf
+skinparam participantBackgroundColor #fff/aaf
+skinparam Shadowing 1
+actor Developer as Dev
+participant "Host (Steamdeck)" as Host
+participant "Raspberry Pi (pi)" as Pi
+participant "Arduino Pro Micro" as Arduino
+hide footbox
+Dev -> Host : Edit code (VS Code, etc)
+note right
+  Edit code in VS Code or your preferred editor
+end note
+Dev -> Host : Save changes
+note right
+  Save changes locally
+end note
+Dev -> Host : scp code to Pi
+note right
+  scp /path/to/kerbal-controller.ino \ 
+    sean@arduinoworkstation.fritz.box:/home/sean/kerbal-control/
+end note
+Host -> Pi : scp code to Pi
+Dev -> Pi : ssh to Pi
+note right
+  ssh \ 
+    sean@arduinoworkstation.fritz.box
+end note
+Pi -> Pi : Compile code (arduino-cli)
+note right
+  cd /home/sean/kerbal-control ; \ 
+  /home/sean/bin/arduino-cli compile \ 
+    --fqbn arduino:avr:leonardo \ 
+    kerbal-control.ino
+end note
+Pi -> Arduino : Upload code (arduino-cli upload)
+note right
+  /home/sean/bin/arduino-cli upload \ 
+    -p /dev/ttyACM0 \ 
+    --fqbn arduino:avr:leonardo \ 
+    kerbal-control.ino
+end note
+Dev -> Pi : ssh to Pi (screen)
+note right
+  screen \ 
+    /dev/ttyACM0 9600
+end note
+Pi -> Arduino : Monitor serial/debug output
+@enduml

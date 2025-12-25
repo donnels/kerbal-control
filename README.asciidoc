@@ -52,6 +52,27 @@ Initial choice for a prototype is the AVR ATmega32u4 8-bit microcontroller which
 "The Pro Micro is an Arduino-compatible microcontroller board developed under an open hardware license by Sparkfun. Clones of the Pro Micro are often used as a lower-cost alternative to a Teensy 2.0 as a basis for a DIY keyboard controller/converter when a lower number of pins would suffice."
 -- https://deskthority.net/wiki/Arduino_Pro_Micro
 
+.Pro micro 5v board
+image::./images/arduino-pro-micro-5v.png[]
+
+.Pro Micro Pinout
+image::./images/arduino-pro-micro-5v-pinout.png[]
+
+.Pro Micro ISP connections
+image::./images/arduino-pro_micro_isp_schematic.png[]
+
+The above figure shows the connections required to program the pro micro via ISP if the usb programming is failing.
+
+[IMPORTANT]
+====
+During ISP programming, the Pro Micro board requires external power. Connect the board to a USB power source (computer, wall adapter, etc.) as the Raspberry Pi Zero does not provide sufficient power through the ISP programmer alone. Without external power, you may see "device signature = 0x000000" errors.
+====
+
+[NOTE]
+====
+When you have one or two different ones floating around it's easy to forget which is which. Measure the voltage between GND and VCC, with USB powered up, to be sure you have the 5V version. Don't let the magic smoke out by connecting the wrong voltage.
+====
+
 === WS2812 LEDs
 Because it's always good to have status LEDs and the WS2812 is both easy to get and has good libraries, with fastled and adafruit, it's the first choice. 
 
@@ -375,3 +396,47 @@ Code written. Compiled clean. USB fails. ISP wired. Ready to burn. Board waits. 
 - USB programming blocked by hardware issues; switched to ISP via avrdude.
 - Wiring: Pi GPIOs to Pro Micro ISP header for SPI programming.
 - Next: Upload via ISP, test in Kerbal Space Program.
+
+== Development Pipeline
+
+This project uses a split development workflow between a host machine (Steamdeck, with VS Code) and a Raspberry Pi (used for compiling and uploading to the Arduino Pro Micro). This allows for convenient editing and version control on the host, while leveraging the Pi for hardware interfacing and programming.
+
+=== Workflow Steps
+
+. Edit code on the host (Steamdeck) using VS Code or your preferred editor.
+. Save changes locally.
+. Transfer the updated code to the Raspberry Pi using `scp`:
++
+----
+scp /path/to/kerbal-controller.ino sean@arduinoworkstation.fritz.box:/home/sean/kerbal-control/
+----
+. SSH into the Raspberry Pi:
++
+----
+ssh sean@arduinoworkstation.fritz.box
+----
+. On the Pi, compile the code using Arduino CLI:
++
+----
+cd /home/sean/kerbal-control
+/home/sean/bin/arduino-cli compile --fqbn arduino:avr:leonardo kerbal-control.ino
+----
+. Upload the compiled code to the Arduino Pro Micro:
++
+----
+/home/sean/bin/arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:leonardo kerbal-control.ino
+----
+. (Optional) Monitor serial output for debugging:
++
+----
+screen /dev/ttyACM0 9600
+----
+
+This pipeline allows for rapid iteration: edit on the host, transfer, compile/upload on the Pi, and test on the Arduino.
+
+=== Sequence Diagram
+
+[plantuml, dev-pipeline-sequence, svg]
+----
+include::plantuml/dev-pipeline-sequence.puml[]
+----

@@ -1,0 +1,42 @@
+@startuml
+skinparam BackgroundColor #fff/aaf
+skinparam StateBackgroundColor #fff/aaf
+skinparam Shadowing 1
+[*] --> Disarmed
+
+state Disarmed as "Disarmed\n- All LEDs red\n- Toggle LED red"
+state Armed as "Armed\n- Toggle LED green\n- LEDs 6-10 cycle green"
+state StagePressed as "Stage Pressed\n- LEDs 6-10 blink orange"
+
+Disarmed --> Armed : Toggle switch to LOW\n(GND connected)
+Armed --> Disarmed : Toggle switch to HIGH
+
+Armed --> StagePressed : Stage button pressed\n(send spacebar)
+StagePressed --> Armed : Stage button released
+
+note right of Disarmed
+  System always starts disarmed,
+  regardless of toggle position.
+  ARM button logic ignores initial state
+  and only responds to changes after startup.
+end note
+
+@enduml
+@startuml 
+skinparam BackgroundColor #fff/aaf
+skinparam ActivityBackgroundColor #fff/aaf
+skinparam Shadowing 1
+start
+:Handle ARM Button;
+if (Toggle changed?) then (yes)
+  :Update armed state;
+endif
+:Handle STAGE Button;
+if (Pressed and armed?) then (yes)
+  :Send spacebar;
+  :Flash LEDs;
+endif
+:Update LED animation/blinking;
+:Show LEDs;
+end
+@enduml

@@ -1,0 +1,42 @@
+@startuml 
+skinparam BackgroundColor #fff/aaf
+skinparam ActivityBackgroundColor #fff/aaf
+skinparam Shadowing 1
+start
+:Start up;
+:Initialize pins, LEDs, Keyboard;
+:Set armed = false, startup = true;
+repeat
+  :Read ARM button;
+  if (Button state changed?) then (yes)
+    if (Startup flag set?) then (yes)
+      :Clear startup flag;
+    else (no)
+      :Toggle armed state;
+      :Update LEDs;
+    endif
+  endif
+  :Read STAGE button;
+  if (Pressed and armed?) then (yes)
+    if (Not already pressed?) then (yes)
+      :Send spacebar keypress;
+      :Flash ring LEDs red;
+      :Set stage pressed flag;
+    endif
+  else
+    :Clear stage pressed flag;
+  endif
+  if (Armed and not stage pressed?) then (yes)
+    :Cycle LEDs 6-10 green (one at a time);
+  endif
+  if (Stage pressed?) then (yes)
+    :Blink LEDs 6-10 orange;
+  endif
+  if (Not armed?) then (yes)
+    :Set all LEDs red;
+  endif
+  :Update LED display;
+  :Debug output;
+repeat while (true)
+
+@enduml

@@ -1,0 +1,62 @@
+@startuml
+title ISP cabling for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam rectangleBackgroundColor #fff/aaf
+skinparam Shadowing 1
+
+rectangle "\n\nArduino Pro Micro" as pro_micro {
+  portin "MOSI (D16)" as mosi #purple
+  portin "MISO (D14)" as miso #purple
+  portin "SCK (D15)" as sck #purple
+  portin "RESET" as reset #gray
+  portin "VCC" as vcc #red
+  portin "GND" as gnd #black
+}
+
+rectangle "\n\nISP Programmer\n(e.g., USBasp, AVRISP)" as programmer {
+  portout "MOSI" as prog_mosi #purple
+  portout "MISO" as prog_miso #purple
+  portout "SCK" as prog_sck #purple
+  portout "RESET" as prog_reset #gray
+  portout "VCC" as prog_vcc #red
+  portout "GND" as prog_gnd #black
+}
+
+' ISP connections
+prog_mosi --> mosi : SPI Data Out
+miso --> prog_miso : SPI Data In
+prog_sck --> sck : SPI Clock
+prog_reset --> reset : Reset signal
+prog_vcc --> vcc : Power (5V)
+prog_gnd --> gnd : Ground
+
+note right of pro_micro
+  **ISP Header Pinout (6-pin):**
+  1: MISO (D14)
+  2: VCC (5V)
+  3: SCK (D15)
+  4: MOSI (D16)
+  5: RESET
+  6: GND
+
+  **Connection Notes:**
+  - Connect VCC only if programmer doesn't supply power
+  - RESET is active low
+  - Use 6-pin or 10-pin ISP cable
+  - Ensure proper orientation (pin 1 marked)
+end note
+
+note left of programmer
+  **Common ISP Programmers:**
+  - USBasp
+  - AVRISP mkII
+  - Arduino as ISP
+  - Raspberry Pi GPIO
+
+  **Programming Software:**
+  - avrdude
+  - Arduino IDE (with ISP)
+end note
+
+@enduml
