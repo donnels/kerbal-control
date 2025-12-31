@@ -31,14 +31,15 @@ jobs:
         id: image-index-adoc
         run: |
           cd images
-          echo "= image index" > ../README.adoc
-          echo ":toc:" >> ../README.adoc
+          echo "= image index" > ./README.adoc
+          echo ":toc:" >> ./README.adoc
           for img in *.{png,jpg,jpeg,gif,svg}; do
             [ -e "$img" ] || continue
-            echo "[[${img}]]" >> ../README.adoc
-            echo "image::images/${img}[]" >> ../README.adoc
-            echo ".${img}" >> ../README.adoc
-            echo >> ../README.adoc
+            echo "" >> ./README.adoc
+            echo "[[${img}]]" >> ./README.adoc
+            echo "image::images/${img}[]" >> ./README.adoc
+            echo ".${img}" >> ./README.adoc
+            echo >> ./README.adoc
           done
           cd ..
       
