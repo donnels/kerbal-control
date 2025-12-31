@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1177px" preserveAspectRatio="none" style="width:568px;height:1177px;background:#FFFFFF;" version="1.1" viewBox="0 0 568 1177" width="568px" zoomAndPan="magnify"><defs><linearGradient id="gafkk8p9721dh0" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#AAAAFF"/></linearGradient><filter height="300%" id="fafkk8p9721dh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><filter height="1" id="bafkk8p9721dh0" width="1" x="0" y="0"><feFlood flood-color="#000000" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh1" width="1" x="0" y="0"><feFlood flood-color="#FF0000" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh2" width="1" x="0" y="0"><feFlood flood-color="#008000" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh3" width="1" x="0" y="0"><feFlood flood-color="#0000FF" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh4" width="1" x="0" y="0"><feFlood flood-color="#FFFF00" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh5" width="1" x="0" y="0"><feFlood flood-color="#800080" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh6" width="1" x="0" y="0"><feFlood flood-color="#808080" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter><filter height="1" id="bafkk8p9721dh7" width="1" x="0" y="0"><feFlood flood-color="#FFA500" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><rect fill="url(#gafkk8p9721dh0)" height="1177" style="stroke:none;stroke-width:1.0;" width="568" x="0" y="0"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="178" x="188.75" y="16.708">Pinout for Pro Micro</text><!--MD5=[a1e3e3042a22542219552783e878a99a]
+entity pin.1.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="47" x="122.5" y="27.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="132.5" y="43.9482">TX0</text><!--MD5=[6c696e5a9c19d5d71f4d8c4702321a82]
+entity pin.1.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="79" x="8.5" y="27.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="18.5" y="43.9482">Serial TX</text><!--MD5=[9184e897678cf786f6cc6549e150759d]
+entity pin.2.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="48" x="122" y="110.2431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="132" y="126.2382">RX1</text><!--MD5=[ad7ce970921bd9c3cb9e4bf87d1bbd43]
+entity pin.2.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="80" x="7" y="110.2431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="17" y="126.2382">Serial RX</text><!--MD5=[55c1ec0f77cc424d5d602f80f173354a]
+entity pin.3.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="52" x="118" y="192.5431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="128" y="208.5382">GND</text><!--MD5=[af4669a1489feb68962c2a9583eb053d]
+entity pin.3.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="72" x="11" y="192.5431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="21" y="208.5382">Ground</text><!--MD5=[7d31459f4f84dbed2ad239bd98d49b0e]
+entity pin.4.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="52" x="118" y="274.8431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="128" y="290.8382">GND</text><!--MD5=[97569b8c15279cdad8ca793084426b49]
+entity pin.4.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="72" x="11" y="274.8431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="21" y="290.8382">Ground</text><!--MD5=[aaca71c8506f36d81e51d95b754846dd]
+entity pin.5.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="357.1331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="373.1282">2</text><!--MD5=[d67be6d06905c86ba08c5a9edbb06727]
+entity pin.5.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="357.1331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="373.1282">Digital I/O</text><!--MD5=[99db0206e848d83eb8f7231ea1384afe]
+entity pin.6.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="439.4331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="455.4282">3</text><!--MD5=[3ca4ae54c8bc33fd5d5e38efce07a0d0]
+entity pin.6.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="439.4331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="455.4282">Digital I/O</text><!--MD5=[c20ee41be61bfe9da2d6e444b2ae0352]
+entity pin.7.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="521.7331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="537.7282">4</text><!--MD5=[ed3636cbed986e65b472568da71a04d5]
+entity pin.7.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="521.7331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="537.7282">Digital I/O</text><!--MD5=[2be40ae0e16ae849cef61fe5b73f2295]
+entity pin.8.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="604.0331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="620.0282">5</text><!--MD5=[504b88a09176e469dcc6e23e331ec6e8]
+entity pin.8.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="604.0331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="620.0282">Digital I/O</text><!--MD5=[9081b9905981221a251109c2b02d15ae]
+entity pin.9.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="686.3231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="702.3182">6</text><!--MD5=[865e170facc73b4dc6d3a611f7d848bc]
+entity pin.9.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="686.3231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="702.3182">Digital I/O</text><!--MD5=[886ffe19bb2e1cc90cbf59ee7c60cfaa]
+entity pin.10.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="768.6231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="784.6182">7</text><!--MD5=[3018559f106ca6042d0243eae1780c4a]
+entity pin.10.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="768.6231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="784.6182">Digital I/O</text><!--MD5=[5ad26f0952950458721c02a9d6c9e587]
+entity pin.11.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="850.9231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="866.9182">8</text><!--MD5=[8c1d168ee9c94164d8133637a6ffbc91]
+entity pin.11.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="850.9231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="866.9182">Digital I/O</text><!--MD5=[1ddee037a0024cbeabb837ac65a0727b]
+entity pin.12.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="29" x="140.5" y="933.2131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="150.5" y="949.2082">9</text><!--MD5=[819542eac6feb37db720b36454a8875a]
+entity pin.12.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="20.5" y="933.2131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="30.5" y="949.2082">Digital I/O</text><!--MD5=[0aacd0f4bb06e75c6f130b78af18bb55]
+entity pin.13.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="52" x="311" y="27.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="321" y="43.9482">RAW</text><!--MD5=[3b302ddf751c843ff7255af8a4492b6f]
+entity pin.13.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="159" x="397.5" y="27.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="407.5" y="43.9482">Unregulated voltage</text><!--MD5=[9c3f76bb94209888bc2568ec2f0937e3]
+entity pin.14.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="52" x="311" y="110.2431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="321" y="126.2382">GND</text><!--MD5=[9c4fe807dc429f70631c2e9138fe69ed]
+entity pin.14.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="72" x="398" y="110.2431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="408" y="126.2382">Ground</text><!--MD5=[26a7ffd3f5470fafaa193608d2b11012]
+entity pin.15.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="48" x="311" y="192.5431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="321" y="208.5382">RST</text><!--MD5=[2268247e71f9f9a6cbb9a711c19998d0]
+entity pin.15.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="142" x="394" y="192.5431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="404" y="208.5382">Reset (active low)</text><!--MD5=[82b8034eabc2e9c867635737745c33f6]
+entity pin.16.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="49" x="311.5" y="274.8431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="321.5" y="290.8382">VCC</text><!--MD5=[2a8abe6cf51f0bd5a4534c04d44005c9]
+entity pin.16.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="113" x="395.5" y="274.8431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="405.5" y="290.8382">Regulated 5V</text><!--MD5=[225c5ad0d72c3c5dc547f10a0279f42f]
+entity pin.17.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="357.1331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="373.1282">A3</text><!--MD5=[be026c28bc35d831a91a8bb562f8e83c]
+entity pin.17.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="106" x="384" y="357.1331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="394" y="373.1282">Analog input</text><!--MD5=[67564b8929a6905fc095f4e60aeb120b]
+entity pin.18.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="439.4331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="455.4282">A2</text><!--MD5=[a4eb711e43da27f9941c0dc9b5be6974]
+entity pin.18.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="106" x="384" y="439.4331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="394" y="455.4282">Analog input</text><!--MD5=[85a388f242e675fe84f3c37bf058c660]
+entity pin.19.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="521.7331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="537.7282">A1</text><!--MD5=[dfacff6643d55d33288023055c848bf8]
+entity pin.19.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="106" x="384" y="521.7331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="394" y="537.7282">Analog input</text><!--MD5=[474592316adc457c6afe395d509f8a78]
+entity pin.20.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="604.0331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="620.0282">A0</text><!--MD5=[e38a4bcb55c6b938c51b2b444bfebf23]
+entity pin.20.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="106" x="384" y="604.0331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="394" y="620.0282">Analog input</text><!--MD5=[ec46c28d0fdd7e811b76a08fae0f4d5b]
+entity pin.21.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="686.3231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="702.3182">15</text><!--MD5=[ce5eda3dc2a6968a5a207dfbaa1879b1]
+entity pin.21.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="73" x="384.5" y="686.3231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="394.5" y="702.3182">SPI SCK</text><!--MD5=[a7fd2bea0e74066e3ef7082f19854abf]
+entity pin.22.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="768.6231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="784.6182">14</text><!--MD5=[ac2c87015c8f99c991e3af5c62e828d4]
+entity pin.22.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="80" x="384" y="768.6231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="394" y="784.6182">SPI MISO</text><!--MD5=[18f9bba6898ceaab694ec07c7941d9b3]
+entity pin.23.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="850.9231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="866.9182">16</text><!--MD5=[1bf84b93b93701466dd9fce6860093fd]
+entity pin.23.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="80" x="384" y="850.9231"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="394" y="866.9182">SPI MOSI</text><!--MD5=[af0d63e05c9d647374a4c8803c715c94]
+entity pin.24.label.1--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="38" x="311" y="933.2131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="18" x="321" y="949.2082">10</text><!--MD5=[1e552dfbc8264d9cb0eaf6d240ee14e8]
+entity pin.24.label.2--><rect fill="url(#gafkk8p9721dh0)" filter="url(#fafkk8p9721dh)" height="22.2969" style="stroke:#000000;stroke-width:1.5;" width="85" x="384.5" y="933.2131"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="394.5" y="949.2082">Digital I/O</text><!--MD5=[03cc963492ebbec3b43e9b8aa837b233]
+entity pin.1--><ellipse cx="214" cy="39.1031" fill="#FFFF00" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="69.0982">pin 1</text><!--MD5=[854c3dd2677b82aa7e66d043dde9f4a7]
+entity pin.2--><ellipse cx="214" cy="121.3931" fill="#FFFF00" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="151.3882">pin 2</text><!--MD5=[77c0677e9921d7a375613567df3c730e]
+entity pin.3--><ellipse cx="214" cy="203.6931" fill="#000000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="233.6882">pin 3</text><!--MD5=[c5487c3f7705a8ad21d1b40d5b897530]
+entity pin.4--><ellipse cx="214" cy="285.9931" fill="#000000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="315.9882">pin 4</text><!--MD5=[978e33decebbca3ab87826b218d59961]
+entity pin.5--><ellipse cx="214" cy="368.2831" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="398.2782">pin 5</text><!--MD5=[2dd57aef546db5d8d631150adabb6461]
+entity pin.6--><ellipse cx="214" cy="450.5831" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="480.5782">pin 6</text><!--MD5=[293e0d2551fb642227bb7001806159d4]
+entity pin.7--><ellipse cx="214" cy="532.8831" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="562.8782">pin 7</text><!--MD5=[9d4071ae9ddc09e4d37a2e802ab45ec5]
+entity pin.8--><ellipse cx="214" cy="615.1731" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="645.1682">pin 8</text><!--MD5=[19fa6323762cd3a48cb93e6dd5456b9e]
+entity pin.9--><ellipse cx="214" cy="697.4731" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="197" y="727.4682">pin 9</text><!--MD5=[579e288ac736d8232c1d55d71c84fdb9]
+entity pin.10--><ellipse cx="214" cy="779.7731" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="192.5" y="809.7682">pin 10</text><!--MD5=[d9f3c541b2a4926fefe69377710fd9d1]
+entity pin.11--><ellipse cx="214" cy="862.0631" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="192.5" y="892.0582">pin 11</text><!--MD5=[74de0b141412671c929602e890b50a70]
+entity pin.12--><ellipse cx="214" cy="944.3631" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="192.5" y="974.3582">pin 12</text><!--MD5=[8da56fcf580fcd8db5bd70ce0abb1d67]
+entity pin.13--><ellipse cx="267" cy="39.1031" fill="#FFA500" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="69.0982">pin 13</text><!--MD5=[b36ae5f228adf79be26d66a80e731445]
+entity pin.14--><ellipse cx="267" cy="121.3931" fill="#000000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="151.3882">pin 14</text><!--MD5=[bcb23a0b2aa9ce088bff7e42140a2c34]
+entity pin.15--><ellipse cx="267" cy="203.6931" fill="#808080" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="233.6882">pin 15</text><!--MD5=[fd3685cce7ad4ef1dcffd69d351e79d4]
+entity pin.16--><ellipse cx="267" cy="285.9931" fill="#FF0000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="315.9882">pin 16</text><!--MD5=[aeee66315e72b796a0cd8dfeda4a3f56]
+entity pin.17--><ellipse cx="267" cy="368.2831" fill="#008000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="398.2782">pin 17</text><!--MD5=[02481d867c8ba7c7c27dc4437c6b8f2f]
+entity pin.18--><ellipse cx="267" cy="450.5831" fill="#008000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="480.5782">pin 18</text><!--MD5=[4aac8d4fe284202fc54e0b1f22e4f175]
+entity pin.19--><ellipse cx="267" cy="532.8831" fill="#008000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="562.8782">pin 19</text><!--MD5=[2957856e16fd68e1619bfabb5e9a9a6f]
+entity pin.20--><ellipse cx="267" cy="615.1731" fill="#008000" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="645.1682">pin 20</text><!--MD5=[a2b75be6bab165919d027ac135b956e4]
+entity pin.21--><ellipse cx="267" cy="697.4731" fill="#800080" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="727.4682">pin 21</text><!--MD5=[61420c841e5f999f98d1fe18e031ccbd]
+entity pin.22--><ellipse cx="267" cy="779.7731" fill="#800080" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="809.7682">pin 22</text><!--MD5=[63e9b03a84cc75d4e5cad411848aec7d]
+entity pin.23--><ellipse cx="267" cy="862.0631" fill="#800080" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="892.0582">pin 23</text><!--MD5=[c5b4d5517e7d5501046e6386a753ede9]
+entity pin.24--><ellipse cx="267" cy="944.3631" fill="#0000FF" filter="url(#fafkk8p9721dh)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="245.5" y="974.3582">pin 24</text><!--MD5=[a8a3ce13bd4b5e78b42a9db56668da1f]
+link pin.1 to pin.13--><!--MD5=[5bff170f060303565c45a6d7890d8fd4]
+link pin.2 to pin.14--><!--MD5=[f5933c5282e138bf8c72e06b84400248]
+link pin.3 to pin.15--><!--MD5=[e1eac37b3de17a95905f3d77cd0ed14e]
+link pin.4 to pin.16--><!--MD5=[ca6df4850af094e7b048fcb03a72be91]
+link pin.5 to pin.17--><!--MD5=[b29710b84c65f4ac2af209e36f46d291]
+link pin.6 to pin.18--><!--MD5=[2073ac5430e8f37fef0b67deda76f747]
+link pin.7 to pin.19--><!--MD5=[5b5a358ec36736027feeca984498865a]
+link pin.8 to pin.20--><!--MD5=[31ff55d3cabe4faa895f8bd7b5c0c754]
+link pin.9 to pin.21--><!--MD5=[64770500ca44df3c387d3e256efc2ab4]
+link pin.10 to pin.22--><!--MD5=[7e6fb1a79f3578a6440eb3ea20bd4ae4]
+link pin.11 to pin.23--><!--MD5=[872d0fe64cb436cc621bde427939e374]
+link pin.12 to pin.24--><!--MD5=[9ebf918b74c2f15985a2603aeeafbc38]
+link pin.1 to pin.2--><!--MD5=[0206f452fb44968b0bc06389fd5b8c85]
+link pin.2 to pin.3--><!--MD5=[e9713d1f243bbc7e0f854c71da5d6cbc]
+link pin.3 to pin.4--><!--MD5=[faa3389e5f81e5a3700ebbbf3a794324]
+link pin.4 to pin.5--><!--MD5=[819ca0b9392f204e8b66d91a1f90bf98]
+link pin.5 to pin.6--><!--MD5=[91cd5a074ccac47ae2ada3f5ad9ac315]
+link pin.6 to pin.7--><!--MD5=[86da03f9cee952f2e867921ce332b450]
+link pin.7 to pin.8--><!--MD5=[eebf5f3cb0723f59dec1283f442cc5f6]
+link pin.8 to pin.9--><!--MD5=[348d2680812285d1d6e6e8bdca60561d]
+link pin.9 to pin.10--><!--MD5=[47d5bcff1aca8253c5810054f0b6bccc]
+link pin.10 to pin.11--><!--MD5=[d98b3ea50f51e87a53f1ea0b78776b63]
+link pin.11 to pin.12--><!--MD5=[ecf685ba22ba83defaec92f067dcc6fc]
+link pin.1.label.2 to pin.1.label.1--><path d="M87.81,39.1031 C99.33,39.1031 110.85,39.1031 122.36,39.1031 " fill="none" id="pin.1.label.2-pin.1.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d60833cbcfdb71e329b2d6663545308a]
+link pin.1.label.1 to pin.1--><path d="M169.91,39.1031 C181.5,39.1031 193.1,39.1031 204.7,39.1031 " fill="none" id="pin.1.label.1-pin.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3109ea894a11f99b11597a5f74173c11]
+link pin.2.label.2 to pin.2.label.1--><path d="M87.22,121.3931 C98.7,121.3931 110.18,121.3931 121.66,121.3931 " fill="none" id="pin.2.label.2-pin.2.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[849a8920d4475237431cca36baa23c6c]
+link pin.2.label.1 to pin.2--><path d="M170.44,121.3931 C181.9,121.3931 193.35,121.3931 204.81,121.3931 " fill="none" id="pin.2.label.1-pin.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[23760781eda904b1a89318fc808f646c]
+link pin.3.label.2 to pin.3.label.1--><path d="M83.37,203.6931 C94.9,203.6931 106.43,203.6931 117.95,203.6931 " fill="none" id="pin.3.label.2-pin.3.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[285d9d19f3c9b6c26851e30b1a18b771]
+link pin.3.label.1 to pin.3--><path d="M170.25,203.6931 C181.76,203.6931 193.26,203.6931 204.77,203.6931 " fill="none" id="pin.3.label.1-pin.3" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d323609267ae7a4b5a2264ab548b802b]
+link pin.4.label.2 to pin.4.label.1--><path d="M83.37,285.9931 C94.9,285.9931 106.43,285.9931 117.95,285.9931 " fill="none" id="pin.4.label.2-pin.4.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f3b47ad8f2c550d223741d4708ec3cfb]
+link pin.4.label.1 to pin.4--><path d="M170.25,285.9931 C181.76,285.9931 193.26,285.9931 204.77,285.9931 " fill="none" id="pin.4.label.1-pin.4" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[71ca2ae0880d6d8d94d531a11435ec50]
+link pin.5.label.2 to pin.5.label.1--><path d="M105.77,368.2831 C117.3,368.2831 128.84,368.2831 140.38,368.2831 " fill="none" id="pin.5.label.2-pin.5.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a9c890b2a52be655ab239fd06145bbe5]
+link pin.5.label.1 to pin.5--><path d="M169.75,368.2831 C181.39,368.2831 193.03,368.2831 204.67,368.2831 " fill="none" id="pin.5.label.1-pin.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[87e011d7d94a4ad6b6f32ea0a3b2fda6]
+link pin.6.label.2 to pin.6.label.1--><path d="M105.77,450.5831 C117.3,450.5831 128.84,450.5831 140.38,450.5831 " fill="none" id="pin.6.label.2-pin.6.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c632ae37b11fe1f2fad18f9fc40bac98]
+link pin.6.label.1 to pin.6--><path d="M169.75,450.5831 C181.39,450.5831 193.03,450.5831 204.67,450.5831 " fill="none" id="pin.6.label.1-pin.6" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[783a73c6b36b952f37ce9f7a3ef84481]
+link pin.7.label.2 to pin.7.label.1--><path d="M105.77,532.8831 C117.3,532.8831 128.84,532.8831 140.38,532.8831 " fill="none" id="pin.7.label.2-pin.7.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fa6f189e3ef6dfddf8fb25eb1a434824]
+link pin.7.label.1 to pin.7--><path d="M169.75,532.8831 C181.39,532.8831 193.03,532.8831 204.67,532.8831 " fill="none" id="pin.7.label.1-pin.7" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2423639d24b2b704a704789956c73662]
+link pin.8.label.2 to pin.8.label.1--><path d="M105.77,615.1731 C117.3,615.1731 128.84,615.1731 140.38,615.1731 " fill="none" id="pin.8.label.2-pin.8.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[16a09312591ae05b1ca27073ba11eae1]
+link pin.8.label.1 to pin.8--><path d="M169.75,615.1731 C181.39,615.1731 193.03,615.1731 204.67,615.1731 " fill="none" id="pin.8.label.1-pin.8" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ea37550e92e57a2d8ae34ec2375ca960]
+link pin.9.label.2 to pin.9.label.1--><path d="M105.77,697.4731 C117.3,697.4731 128.84,697.4731 140.38,697.4731 " fill="none" id="pin.9.label.2-pin.9.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d1f41cf7eb1a0f0e15add14f8dba5a60]
+link pin.9.label.1 to pin.9--><path d="M169.75,697.4731 C181.39,697.4731 193.03,697.4731 204.67,697.4731 " fill="none" id="pin.9.label.1-pin.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b1fc2b2e034873314843cee82ee96c7c]
+link pin.10.label.2 to pin.10.label.1--><path d="M105.77,779.7731 C117.3,779.7731 128.84,779.7731 140.38,779.7731 " fill="none" id="pin.10.label.2-pin.10.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b65b895a6c014a4250be58b1cdd509ec]
+link pin.10.label.1 to pin.10--><path d="M169.75,779.7731 C181.39,779.7731 193.03,779.7731 204.67,779.7731 " fill="none" id="pin.10.label.1-pin.10" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5508c1400e128e352500f052b88a2b5e]
+link pin.11.label.2 to pin.11.label.1--><path d="M105.77,862.0631 C117.3,862.0631 128.84,862.0631 140.38,862.0631 " fill="none" id="pin.11.label.2-pin.11.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[128ca9cc19b265a1e26858d382cdca42]
+link pin.11.label.1 to pin.11--><path d="M169.75,862.0631 C181.39,862.0631 193.03,862.0631 204.67,862.0631 " fill="none" id="pin.11.label.1-pin.11" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8cbffd5f53f31a717b2b662c73632d9b]
+link pin.12.label.2 to pin.12.label.1--><path d="M105.77,944.3631 C117.3,944.3631 128.84,944.3631 140.38,944.3631 " fill="none" id="pin.12.label.2-pin.12.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2a6bfd6c2b88addb4033244aae539991]
+link pin.12.label.1 to pin.12--><path d="M169.75,944.3631 C181.39,944.3631 193.03,944.3631 204.67,944.3631 " fill="none" id="pin.12.label.1-pin.12" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b7d9ad1635d82aef7833843a381ce61a]
+link pin.13 to pin.14--><!--MD5=[c3921458e8b6a0817ae722a3ae880dbb]
+link pin.14 to pin.15--><!--MD5=[b8f4bf05a30a772adc382137d588623a]
+link pin.15 to pin.16--><!--MD5=[c5dd42bcca6bce2aed4d09f63c0f262e]
+link pin.16 to pin.17--><!--MD5=[505c6c22ff557c7b0dcb88ed990ffeb1]
+link pin.17 to pin.18--><!--MD5=[ba91748f06d109affe839c7d3b586a05]
+link pin.18 to pin.19--><!--MD5=[9f2b0671fbfa3a438a6f556c51d36cbd]
+link pin.19 to pin.20--><!--MD5=[726aa8a8568020c14c123c854a51eeb2]
+link pin.20 to pin.21--><!--MD5=[1bfc8818945cc50c7f9fca76936f384b]
+link pin.21 to pin.22--><!--MD5=[c9d6c17c795235713cd0230583ac830c]
+link pin.22 to pin.23--><!--MD5=[8978b83911b5271e47f7d05cd258b3ec]
+link pin.23 to pin.24--><!--MD5=[ae7a5e45f534aa158fdfaacd74743c69]
+link pin.13 to pin.13.label.1--><path d="M276.3,39.1031 C287.84,39.1031 299.38,39.1031 310.92,39.1031 " fill="none" id="pin.13-pin.13.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cfad31cfcab9b155d27cddc0ec2739ee]
+link pin.13.label.1 to pin.13.label.2--><path d="M363.25,39.1031 C374.51,39.1031 385.76,39.1031 397.02,39.1031 " fill="none" id="pin.13.label.1-pin.13.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7543722b3fc48e2bcbd0bdbe5ee7d34a]
+link pin.14 to pin.14.label.1--><path d="M276.3,121.3931 C287.84,121.3931 299.38,121.3931 310.92,121.3931 " fill="none" id="pin.14-pin.14.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[043cab176183dcdb208644b13f4258ac]
+link pin.14.label.1 to pin.14.label.2--><path d="M363.14,121.3931 C374.68,121.3931 386.21,121.3931 397.74,121.3931 " fill="none" id="pin.14.label.1-pin.14.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1dacdc951ed3d89cec05ab60fb4c9660]
+link pin.15 to pin.15.label.1--><path d="M276.3,203.6931 C287.76,203.6931 299.23,203.6931 310.69,203.6931 " fill="none" id="pin.15-pin.15.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4bb6528ce29fd1282e27e3a3c012472d]
+link pin.15.label.1 to pin.15.label.2--><path d="M359.37,203.6931 C370.79,203.6931 382.21,203.6931 393.62,203.6931 " fill="none" id="pin.15.label.1-pin.15.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7add212f045ceeda6d600730ec721719]
+link pin.16 to pin.16.label.1--><path d="M276.43,285.9931 C288.07,285.9931 299.7,285.9931 311.34,285.9931 " fill="none" id="pin.16-pin.16.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5f308905f056dca74aa931e251a33ad5]
+link pin.16.label.1 to pin.16.label.2--><path d="M360.92,285.9931 C372.31,285.9931 383.69,285.9931 395.08,285.9931 " fill="none" id="pin.16.label.1-pin.16.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2cad0a556c4c8f90552dce0bdc2fae03]
+link pin.17 to pin.17.label.1--><path d="M276.35,368.2831 C287.81,368.2831 299.26,368.2831 310.72,368.2831 " fill="none" id="pin.17-pin.17.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8b1e42b3e6e08be2423e705c0f87d2d3]
+link pin.17.label.1 to pin.17.label.2--><path d="M349.23,368.2831 C360.66,368.2831 372.08,368.2831 383.51,368.2831 " fill="none" id="pin.17.label.1-pin.17.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[170f42b5df162f55203178c6a90e59c9]
+link pin.18 to pin.18.label.1--><path d="M276.35,450.5831 C287.81,450.5831 299.26,450.5831 310.72,450.5831 " fill="none" id="pin.18-pin.18.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d091d57fb55146601f7ae8977a88b767]
+link pin.18.label.1 to pin.18.label.2--><path d="M349.23,450.5831 C360.66,450.5831 372.08,450.5831 383.51,450.5831 " fill="none" id="pin.18.label.1-pin.18.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c4540b1f6944d6a6c9a4a32a00969dcb]
+link pin.19 to pin.19.label.1--><path d="M276.35,532.8831 C287.81,532.8831 299.26,532.8831 310.72,532.8831 " fill="none" id="pin.19-pin.19.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0294a9abfcdc84404d2f0d2b43a70042]
+link pin.19.label.1 to pin.19.label.2--><path d="M349.23,532.8831 C360.66,532.8831 372.08,532.8831 383.51,532.8831 " fill="none" id="pin.19.label.1-pin.19.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[fbe6d1499e182ecbb378379957c733a6]
+link pin.20 to pin.20.label.1--><path d="M276.35,615.1731 C287.81,615.1731 299.26,615.1731 310.72,615.1731 " fill="none" id="pin.20-pin.20.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[965412291dd9a2193f65c526f1aecdbf]
+link pin.20.label.1 to pin.20.label.2--><path d="M349.23,615.1731 C360.66,615.1731 372.08,615.1731 383.51,615.1731 " fill="none" id="pin.20.label.1-pin.20.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1d6f1ca83da381bf59549eba2ad64331]
+link pin.21 to pin.21.label.1--><path d="M276.35,697.4731 C287.81,697.4731 299.26,697.4731 310.72,697.4731 " fill="none" id="pin.21-pin.21.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3a8549b79e078bfc99fa98c907df6e15]
+link pin.21.label.1 to pin.21.label.2--><path d="M349.2,697.4731 C360.88,697.4731 372.57,697.4731 384.26,697.4731 " fill="none" id="pin.21.label.1-pin.21.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1cbd72e8b23382dafa47eee63cf3e9a9]
+link pin.22 to pin.22.label.1--><path d="M276.35,779.7731 C287.81,779.7731 299.26,779.7731 310.72,779.7731 " fill="none" id="pin.22-pin.22.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b79ce7d7c3bc3dcd95ecbdf55ab5176c]
+link pin.22.label.1 to pin.22.label.2--><path d="M349.46,779.7731 C360.82,779.7731 372.17,779.7731 383.53,779.7731 " fill="none" id="pin.22.label.1-pin.22.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[17c14038b6e63d1a60f67d78c0aec8b3]
+link pin.23 to pin.23.label.1--><path d="M276.35,862.0631 C287.81,862.0631 299.26,862.0631 310.72,862.0631 " fill="none" id="pin.23-pin.23.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[19a27789d25f216fd6060a99bd8d6223]
+link pin.23.label.1 to pin.23.label.2--><path d="M349.46,862.0631 C360.82,862.0631 372.17,862.0631 383.53,862.0631 " fill="none" id="pin.23.label.1-pin.23.label.2" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2879d12cb2ba510bce154b9f2c79107c]
+link pin.24 to pin.24.label.1--><path d="M276.35,944.3631 C287.81,944.3631 299.26,944.3631 310.72,944.3631 " fill="none" id="pin.24-pin.24.label.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6f66f36c66115c4e3517554b2e1ce183]
+link pin.24.label.1 to pin.24.label.2--><path d="M349.32,944.3631 C360.96,944.3631 372.59,944.3631 384.22,944.3631 " fill="none" id="pin.24.label.1-pin.24.label.2" style="stroke:#A80036;stroke-width:1.0;"/><rect fill="#DDDDDD" height="160.6719" rx="5" ry="5" style="stroke:#000000;stroke-width:1.0;" width="203" x="175.75" y="989.8582"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="42" x="186.75" y="1009.8534">Color</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="238.75" y="1009.8534">Function</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1026.1502"/><text fill="#000000" filter="url(#bafkk8p9721dh0)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1026.1502">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="237.75" y="1026.1502">GND (Ground)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1042.4471"/><text fill="#FF0000" filter="url(#bafkk8p9721dh1)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1042.4471">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="237.75" y="1042.4471">VCC (Power)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1058.744"/><text fill="#008000" filter="url(#bafkk8p9721dh2)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1058.744">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="237.75" y="1058.744">Analog Input</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1075.0409"/><text fill="#0000FF" filter="url(#bafkk8p9721dh3)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1075.0409">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="237.75" y="1075.0409">Digital I/O</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1091.3377"/><text fill="#FFFF00" filter="url(#bafkk8p9721dh4)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1091.3377">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="237.75" y="1091.3377">Serial (TX/RX)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1107.6346"/><text fill="#800080" filter="url(#bafkk8p9721dh5)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1107.6346">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="237.75" y="1107.6346">SPI</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1123.9315"/><text fill="#808080" filter="url(#bafkk8p9721dh6)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1123.9315">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="237.75" y="1123.9315">Reset</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="185.75" y="1140.2284"/><text fill="#FFA500" filter="url(#bafkk8p9721dh7)" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="185.75" y="1140.2284">"   "</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="237.75" y="1140.2284">RAW (Unregulated)</text><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="996.8582" y2="996.8582"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1013.1551" y2="1013.1551"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1029.452" y2="1029.452"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1045.7489" y2="1045.7489"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1062.0457" y2="1062.0457"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1078.3426" y2="1078.3426"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1094.6395" y2="1094.6395"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1110.9364" y2="1110.9364"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1127.2332" y2="1127.2332"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="372.75" y1="1143.5301" y2="1143.5301"/><line style="stroke:#000000;stroke-width:1.0;" x1="181.75" x2="181.75" y1="996.8582" y2="1143.5301"/><line style="stroke:#000000;stroke-width:1.0;" x1="233.75" x2="233.75" y1="996.8582" y2="1143.5301"/><line style="stroke:#000000;stroke-width:1.0;" x1="372.75" x2="372.75" y1="996.8582" y2="1143.5301"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="113" x="221.25" y="1168.8123">©2025 Sean Donnellan</text><!--MD5=[2b84271acdaf00671c9f92e597a02851]
+@startuml 
+title Pinout for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam cardbackgroundColor #fff/aaf
+skinparam Padding 0
+
+skinparam Shadowing 1
+'' Right side labels (row 1: from label2 to label1 to pin)
+card "TX0" as pin.1.label.1
+card "Serial TX" as pin.1.label.2
+card "RX1" as pin.2.label.1
+card "Serial RX" as pin.2.label.2
+card "GND" as pin.3.label.1
+card "Ground" as pin.3.label.2
+card "GND" as pin.4.label.1
+card "Ground" as pin.4.label.2
+card "2" as pin.5.label.1
+card "Digital I/O" as pin.5.label.2
+card "3" as pin.6.label.1
+card "Digital I/O" as pin.6.label.2
+card "4" as pin.7.label.1
+card "Digital I/O" as pin.7.label.2
+card "5" as pin.8.label.1
+card "Digital I/O" as pin.8.label.2
+card "6" as pin.9.label.1
+card "Digital I/O" as pin.9.label.2
+card "7" as pin.10.label.1
+card "Digital I/O" as pin.10.label.2
+card "8" as pin.11.label.1
+card "Digital I/O" as pin.11.label.2
+card "9" as pin.12.label.1
+card "Digital I/O" as pin.12.label.2
+
+'' Left side labels (row 2: from pin to label1 to label2)
+card "RAW" as pin.13.label.1
+card "Unregulated voltage" as pin.13.label.2
+card "GND" as pin.14.label.1
+card "Ground" as pin.14.label.2
+card "RST" as pin.15.label.1
+card "Reset (active low)" as pin.15.label.2
+card "VCC" as pin.16.label.1
+card "Regulated 5V" as pin.16.label.2
+card "A3" as pin.17.label.1
+card "Analog input" as pin.17.label.2
+card "A2" as pin.18.label.1
+card "Analog input" as pin.18.label.2
+card "A1" as pin.19.label.1
+card "Analog input" as pin.19.label.2
+card "A0" as pin.20.label.1
+card "Analog input" as pin.20.label.2
+card "15" as pin.21.label.1
+card "SPI SCK" as pin.21.label.2
+card "14" as pin.22.label.1
+card "SPI MISO" as pin.22.label.2
+card "16" as pin.23.label.1
+card "SPI MOSI" as pin.23.label.2
+card "10" as pin.24.label.1
+card "Digital I/O" as pin.24.label.2
+
+''Pins
+    interface "pin 1" as pin.1 #Yellow
+    interface "pin 2" as pin.2 #Yellow
+    interface "pin 3" as pin.3 #Black
+    interface "pin 4" as pin.4 #Black
+    interface "pin 5" as pin.5 #Blue
+    interface "pin 6" as pin.6 #Blue
+    interface "pin 7" as pin.7 #Blue
+    interface "pin 8" as pin.8 #Blue
+    interface "pin 9" as pin.9 #Blue
+    interface "pin 10" as pin.10 #Blue
+    interface "pin 11" as pin.11 #Blue
+    interface "pin 12" as pin.12 #Blue
+    interface "pin 13" as pin.13 #Orange
+    interface "pin 14" as pin.14 #Black
+    interface "pin 15" as pin.15 #Gray
+    interface "pin 16" as pin.16 #Red
+    interface "pin 17" as pin.17 #Green
+    interface "pin 18" as pin.18 #Green
+    interface "pin 19" as pin.19 #Green
+    interface "pin 20" as pin.20 #Green
+    interface "pin 21" as pin.21 #Purple
+    interface "pin 22" as pin.22 #Purple
+    interface "pin 23" as pin.23 #Purple
+    interface "pin 24" as pin.24 #Blue
+
+''binding first pin of row1 to first pin of row2
+pin.1 -[hidden]> pin.13
+pin.2 -[hidden]> pin.14
+pin.3 -[hidden]> pin.15
+pin.4 -[hidden]> pin.16
+pin.5 -[hidden]> pin.17
+pin.6 -[hidden]> pin.18
+pin.7 -[hidden]> pin.19
+pin.8 -[hidden]> pin.20
+pin.9 -[hidden]> pin.21
+pin.10 -[hidden]> pin.22
+pin.11 -[hidden]> pin.23
+pin.12 -[hidden]> pin.24
+
+''row 1 (right side)
+pin.1 - -[hidden]> pin.2
+pin.2 - -[hidden]> pin.3
+pin.3 - -[hidden]> pin.4
+pin.4 - -[hidden]> pin.5
+pin.5 - -[hidden]> pin.6
+pin.6 - -[hidden]> pin.7
+pin.7 - -[hidden]> pin.8
+pin.8 - -[hidden]> pin.9
+pin.9 - -[hidden]> pin.10
+pin.10 - -[hidden]> pin.11
+pin.11 - -[hidden]> pin.12
+
+'row 1 labels "label2 to label 1 to pin"
+pin.1.label.2 - pin.1.label.1
+pin.1.label.1 - pin.1
+pin.2.label.2 - pin.2.label.1
+pin.2.label.1 - pin.2
+pin.3.label.2 - pin.3.label.1
+pin.3.label.1 - pin.3
+pin.4.label.2 - pin.4.label.1
+pin.4.label.1 - pin.4
+pin.5.label.2 - pin.5.label.1
+pin.5.label.1 - pin.5
+pin.6.label.2 - pin.6.label.1
+pin.6.label.1 - pin.6
+pin.7.label.2 - pin.7.label.1
+pin.7.label.1 - pin.7
+pin.8.label.2 - pin.8.label.1
+pin.8.label.1 - pin.8
+pin.9.label.2 - pin.9.label.1
+pin.9.label.1 - pin.9
+pin.10.label.2 - pin.10.label.1
+pin.10.label.1 - pin.10
+pin.11.label.2 - pin.11.label.1
+pin.11.label.1 - pin.11
+pin.12.label.2 - pin.12.label.1
+pin.12.label.1 - pin.12
+
+''row 2 (left side)
+pin.13 -[hidden]-> pin.14
+pin.14 - -[hidden]> pin.15
+pin.15 - -[hidden]> pin.16
+pin.16 - -[hidden]> pin.17
+pin.17 - -[hidden]> pin.18
+pin.18 - -[hidden]> pin.19
+pin.19 - -[hidden]> pin.20
+pin.20 - -[hidden]> pin.21
+pin.21 - -[hidden]> pin.22
+pin.22 - -[hidden]> pin.23
+pin.23 - -[hidden]> pin.24
+
+'row 2 labels (pin to label1 to label2)
+pin.13 - pin.13.label.1
+pin.13.label.1 - pin.13.label.2
+pin.14 - pin.14.label.1
+pin.14.label.1 - pin.14.label.2
+pin.15 - pin.15.label.1
+pin.15.label.1 - pin.15.label.2
+pin.16 - pin.16.label.1
+pin.16.label.1 - pin.16.label.2
+pin.17 - pin.17.label.1
+pin.17.label.1 - pin.17.label.2
+pin.18 - pin.18.label.1
+pin.18.label.1 - pin.18.label.2
+pin.19 - pin.19.label.1
+pin.19.label.1 - pin.19.label.2
+pin.20 - pin.20.label.1
+pin.20.label.1 - pin.20.label.2
+pin.21 - pin.21.label.1
+pin.21.label.1 - pin.21.label.2
+pin.22 - pin.22.label.1
+pin.22.label.1 - pin.22.label.2
+pin.23 - pin.23.label.1
+pin.23.label.1 - pin.23.label.2
+pin.24 - pin.24.label.1
+pin.24.label.1 - pin.24.label.2
+
+legend
+|= Color |= Function |
+| <back:black><color:black>"   " | GND (Ground) |
+| <back:red><color:red>"   " | VCC (Power) |
+| <back:green><color:green>"   " | Analog Input |
+| <back:blue><color:blue>"   " | Digital I/O |
+| <back:yellow><color:yellow>"   " | Serial (TX/RX) |
+| <back:purple><color:purple>"   " | SPI |
+| <back:gray><color:gray>"   " | Reset |
+| <back:orange><color:orange>"   " | RAW (Unregulated) |
+endlegend
+
+@enduml
+
+@startuml 
+title Pinout for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam cardbackgroundColor #fff/aaf
+skinparam Padding 0
+
+skinparam Shadowing 1
+card "TX0" as pin.1.label.1
+card "Serial TX" as pin.1.label.2
+card "RX1" as pin.2.label.1
+card "Serial RX" as pin.2.label.2
+card "GND" as pin.3.label.1
+card "Ground" as pin.3.label.2
+card "GND" as pin.4.label.1
+card "Ground" as pin.4.label.2
+card "2" as pin.5.label.1
+card "Digital I/O" as pin.5.label.2
+card "3" as pin.6.label.1
+card "Digital I/O" as pin.6.label.2
+card "4" as pin.7.label.1
+card "Digital I/O" as pin.7.label.2
+card "5" as pin.8.label.1
+card "Digital I/O" as pin.8.label.2
+card "6" as pin.9.label.1
+card "Digital I/O" as pin.9.label.2
+card "7" as pin.10.label.1
+card "Digital I/O" as pin.10.label.2
+card "8" as pin.11.label.1
+card "Digital I/O" as pin.11.label.2
+card "9" as pin.12.label.1
+card "Digital I/O" as pin.12.label.2
+
+card "RAW" as pin.13.label.1
+card "Unregulated voltage" as pin.13.label.2
+card "GND" as pin.14.label.1
+card "Ground" as pin.14.label.2
+card "RST" as pin.15.label.1
+card "Reset (active low)" as pin.15.label.2
+card "VCC" as pin.16.label.1
+card "Regulated 5V" as pin.16.label.2
+card "A3" as pin.17.label.1
+card "Analog input" as pin.17.label.2
+card "A2" as pin.18.label.1
+card "Analog input" as pin.18.label.2
+card "A1" as pin.19.label.1
+card "Analog input" as pin.19.label.2
+card "A0" as pin.20.label.1
+card "Analog input" as pin.20.label.2
+card "15" as pin.21.label.1
+card "SPI SCK" as pin.21.label.2
+card "14" as pin.22.label.1
+card "SPI MISO" as pin.22.label.2
+card "16" as pin.23.label.1
+card "SPI MOSI" as pin.23.label.2
+card "10" as pin.24.label.1
+card "Digital I/O" as pin.24.label.2
+
+    interface "pin 1" as pin.1 #Yellow
+    interface "pin 2" as pin.2 #Yellow
+    interface "pin 3" as pin.3 #Black
+    interface "pin 4" as pin.4 #Black
+    interface "pin 5" as pin.5 #Blue
+    interface "pin 6" as pin.6 #Blue
+    interface "pin 7" as pin.7 #Blue
+    interface "pin 8" as pin.8 #Blue
+    interface "pin 9" as pin.9 #Blue
+    interface "pin 10" as pin.10 #Blue
+    interface "pin 11" as pin.11 #Blue
+    interface "pin 12" as pin.12 #Blue
+    interface "pin 13" as pin.13 #Orange
+    interface "pin 14" as pin.14 #Black
+    interface "pin 15" as pin.15 #Gray
+    interface "pin 16" as pin.16 #Red
+    interface "pin 17" as pin.17 #Green
+    interface "pin 18" as pin.18 #Green
+    interface "pin 19" as pin.19 #Green
+    interface "pin 20" as pin.20 #Green
+    interface "pin 21" as pin.21 #Purple
+    interface "pin 22" as pin.22 #Purple
+    interface "pin 23" as pin.23 #Purple
+    interface "pin 24" as pin.24 #Blue
+
+pin.1 -[hidden]> pin.13
+pin.2 -[hidden]> pin.14
+pin.3 -[hidden]> pin.15
+pin.4 -[hidden]> pin.16
+pin.5 -[hidden]> pin.17
+pin.6 -[hidden]> pin.18
+pin.7 -[hidden]> pin.19
+pin.8 -[hidden]> pin.20
+pin.9 -[hidden]> pin.21
+pin.10 -[hidden]> pin.22
+pin.11 -[hidden]> pin.23
+pin.12 -[hidden]> pin.24
+
+pin.1 - -[hidden]> pin.2
+pin.2 - -[hidden]> pin.3
+pin.3 - -[hidden]> pin.4
+pin.4 - -[hidden]> pin.5
+pin.5 - -[hidden]> pin.6
+pin.6 - -[hidden]> pin.7
+pin.7 - -[hidden]> pin.8
+pin.8 - -[hidden]> pin.9
+pin.9 - -[hidden]> pin.10
+pin.10 - -[hidden]> pin.11
+pin.11 - -[hidden]> pin.12
+
+pin.1.label.2 - pin.1.label.1
+pin.1.label.1 - pin.1
+pin.2.label.2 - pin.2.label.1
+pin.2.label.1 - pin.2
+pin.3.label.2 - pin.3.label.1
+pin.3.label.1 - pin.3
+pin.4.label.2 - pin.4.label.1
+pin.4.label.1 - pin.4
+pin.5.label.2 - pin.5.label.1
+pin.5.label.1 - pin.5
+pin.6.label.2 - pin.6.label.1
+pin.6.label.1 - pin.6
+pin.7.label.2 - pin.7.label.1
+pin.7.label.1 - pin.7
+pin.8.label.2 - pin.8.label.1
+pin.8.label.1 - pin.8
+pin.9.label.2 - pin.9.label.1
+pin.9.label.1 - pin.9
+pin.10.label.2 - pin.10.label.1
+pin.10.label.1 - pin.10
+pin.11.label.2 - pin.11.label.1
+pin.11.label.1 - pin.11
+pin.12.label.2 - pin.12.label.1
+pin.12.label.1 - pin.12
+
+pin.13 -[hidden]-> pin.14
+pin.14 - -[hidden]> pin.15
+pin.15 - -[hidden]> pin.16
+pin.16 - -[hidden]> pin.17
+pin.17 - -[hidden]> pin.18
+pin.18 - -[hidden]> pin.19
+pin.19 - -[hidden]> pin.20
+pin.20 - -[hidden]> pin.21
+pin.21 - -[hidden]> pin.22
+pin.22 - -[hidden]> pin.23
+pin.23 - -[hidden]> pin.24
+
+pin.13 - pin.13.label.1
+pin.13.label.1 - pin.13.label.2
+pin.14 - pin.14.label.1
+pin.14.label.1 - pin.14.label.2
+pin.15 - pin.15.label.1
+pin.15.label.1 - pin.15.label.2
+pin.16 - pin.16.label.1
+pin.16.label.1 - pin.16.label.2
+pin.17 - pin.17.label.1
+pin.17.label.1 - pin.17.label.2
+pin.18 - pin.18.label.1
+pin.18.label.1 - pin.18.label.2
+pin.19 - pin.19.label.1
+pin.19.label.1 - pin.19.label.2
+pin.20 - pin.20.label.1
+pin.20.label.1 - pin.20.label.2
+pin.21 - pin.21.label.1
+pin.21.label.1 - pin.21.label.2
+pin.22 - pin.22.label.1
+pin.22.label.1 - pin.22.label.2
+pin.23 - pin.23.label.1
+pin.23.label.1 - pin.23.label.2
+pin.24 - pin.24.label.1
+pin.24.label.1 - pin.24.label.2
+
+legend
+|= Color |= Function |
+| <back:black><color:black>"   " | GND (Ground) |
+| <back:red><color:red>"   " | VCC (Power) |
+| <back:green><color:green>"   " | Analog Input |
+| <back:blue><color:blue>"   " | Digital I/O |
+| <back:yellow><color:yellow>"   " | Serial (TX/RX) |
+| <back:purple><color:purple>"   " | SPI |
+| <back:gray><color:gray>"   " | Reset |
+| <back:orange><color:orange>"   " | RAW (Unregulated) |
+endlegend
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 16:16:42 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

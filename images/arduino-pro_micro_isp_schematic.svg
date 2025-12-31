@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="595px" preserveAspectRatio="none" style="width:1262px;height:595px;background:#FFFFFF;" version="1.1" viewBox="0 0 1262 595" width="1262px" zoomAndPan="magnify"><defs><linearGradient id="g1mxissad3w8i0" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#AAAAFF"/></linearGradient><filter height="300%" id="f1mxissad3w8i" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="url(#g1mxissad3w8i0)" height="595" style="stroke:none;stroke-width:1.0;" width="1262" x="0" y="0"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="218" x="514.5" y="16.708">ISP cabling for Pro Micro</text><!--MD5=[8e20b8b628ae7691dc47620f5c18851a]
+cluster pro_micro--><rect fill="url(#g1mxissad3w8i0)" filter="url(#f1mxissad3w8i)" height="219.87" style="stroke:#000000;stroke-width:1.5;" width="836" x="27" y="298.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="0" x="447.5" y="313.1382"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="0" x="447.5" y="329.4351"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="374" y="345.732">Arduino Pro Micro</text><!--MD5=[a02b35a537e891f86aafefc20de33a06]
+cluster programmer--><rect fill="url(#g1mxissad3w8i0)" filter="url(#f1mxissad3w8i)" height="167.09" style="stroke:#000000;stroke-width:1.5;" width="446" x="220" y="42.0531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="0" x="445.5" y="57.0482"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="0" x="445.5" y="73.3451"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="379.5" y="89.642">ISP Programmer</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="177" x="354.5" y="105.9389">(e.g., USBasp, AVRISP)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="6" y="276.8414">MOSI (D16)</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="39" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="166" y="276.8414">MISO (D14)</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="199" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="329.5" y="276.8414">SCK (D15)</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="359" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="502" y="276.8414">RESET</text><rect fill="#A80036" height="12" style="stroke:#808080;stroke-width:1.5;" width="12" x="519" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="670.5" y="276.8414">VCC</text><rect fill="#A80036" height="12" style="stroke:#FF0000;stroke-width:1.5;" width="12" x="679" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="829" y="276.8414">GND</text><rect fill="#A80036" height="12" style="stroke:#000000;stroke-width:1.5;" width="12" x="839" y="292.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="220.5" y="228.1382">MOSI</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="232" y="203.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="302.5" y="228.1382">MISO</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="314" y="203.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="388" y="228.1382">SCK</text><rect fill="#A80036" height="12" style="stroke:#800080;stroke-width:1.5;" width="12" x="396" y="203.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="461" y="228.1382">RESET</text><rect fill="#A80036" height="12" style="stroke:#808080;stroke-width:1.5;" width="12" x="478" y="203.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="551.5" y="228.1382">VCC</text><rect fill="#A80036" height="12" style="stroke:#FF0000;stroke-width:1.5;" width="12" x="560" y="203.1431"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="632" y="228.1382">GND</text><rect fill="#A80036" height="12" style="stroke:#000000;stroke-width:1.5;" width="12" x="642" y="203.1431"/><path d="M875,365.1431 L875,571.8697 L1253,571.8697 L1253,375.1431 L1243,365.1431 L875,365.1431 " fill="#FBFB77" filter="url(#f1mxissad3w8i)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1243,365.1431 L1243,375.1431 L1253,375.1431 L1243,365.1431 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="193" x="881" y="382.21">ISP Header Pinout (6-pin):</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="881" y="397.3428">1: MISO (D14)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="881" y="412.4756">2: VCC (5V)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="881" y="427.6085">3: SCK (D15)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="881" y="442.7413">4: MOSI (D16)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="881" y="457.8741">5: RESET</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="881" y="473.0069">6: GND</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="885" y="488.1397"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="135" x="881" y="503.2725">Connection Notes:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="357" x="881" y="518.4053">- Connect VCC only if programmer doesn't supply power</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="881" y="533.5381">- RESET is active low</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="881" y="548.671">- Use 6-pin or 10-pin ISP cable</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="270" x="881" y="563.8038">- Ensure proper orientation (pin 1 marked)</text><path d="M678.5,26.9531 L678.5,173.1484 L903.5,173.1484 L903.5,36.9531 L893.5,26.9531 L678.5,26.9531 " fill="#FBFB77" filter="url(#f1mxissad3w8i)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M893.5,26.9531 L893.5,36.9531 L903.5,36.9531 L893.5,26.9531 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="204" x="684.5" y="44.02">Common ISP Programmers:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="684.5" y="59.1528">- USBasp</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85" x="684.5" y="74.2856">- AVRISP mkII</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="684.5" y="89.4185">- Arduino as ISP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="684.5" y="104.5513">- Raspberry Pi GPIO</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="0" x="688.5" y="119.6841"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="177" x="684.5" y="134.8169">Programming Software:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="684.5" y="149.9497">- avrdude</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="684.5" y="165.0825">- Arduino IDE (with ISP)</text><!--MD5=[74dae097b1d07debf73f5ae94590f57b]
+link prog_mosi to mosi--><path d="M231.53,213.0431 C218.16,219.0331 186.52,233.2031 160,245.1431 C122.52,262.0331 78.22,282.0931 57.22,291.6131 " fill="none" id="prog_mosi-to-mosi" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="52.86,293.5831,62.7085,293.5004,57.4118,291.5141,59.3981,286.2174,52.86,293.5831" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="161" y="258.21">SPI Data Out</text><!--MD5=[1bd72ae17fd1306d1b63c295d6eaf493]
+link miso to prog_miso--><path d="M211.5,292.2331 C230.3,278.0031 284.95,236.6631 308.73,218.6731 " fill="none" id="miso-to-prog_miso" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="312.61,215.7331,303.0189,217.9715,308.622,218.7491,307.8445,224.3523,312.61,215.7331" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="273.8" y="258.21">SPI Data In</text><!--MD5=[1e565f60e40e591eb64f936d19f87a01]
+link prog_sck to sck--><path d="M399.69,215.5931 C393.72,229.6231 377.71,267.2731 369.7,286.1031 " fill="none" id="prog_sck-to-sck" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="367.91,290.3131,375.1142,283.5976,369.8675,285.7122,367.7528,280.4655,367.91,290.3131" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="387.81" y="258.21">SPI Clock</text><!--MD5=[19598aa2c154300951e6ff1a2d516eba]
+link prog_reset to reset--><path d="M486.56,215.5931 C493.18,229.6231 510.92,267.2731 519.8,286.1031 " fill="none" id="prog_reset-to-reset" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="521.79,290.3331,521.5696,280.4867,519.6576,285.8107,514.3336,283.8986,521.79,290.3331" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="509.17" y="258.21">Reset signal</text><!--MD5=[9236030217c093179a8029f1aa8278d4]
+link prog_vcc to vcc--><path d="M572.4,214.8231 C591.61,228.8631 648.97,270.8031 673.58,288.7931 " fill="none" id="prog_vcc-to-vcc" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="677.35,291.5531,672.4618,283.003,673.3193,288.5944,667.7279,289.452,677.35,291.5531" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="637.16" y="258.21">Power (5V)</text><!--MD5=[b72fd0b994e67ad14d51cbe12b0b7f60]
+link prog_gnd to gnd--><path d="M654.11,212.8431 C681.74,225.0431 795.23,275.1631 832.83,291.7731 " fill="none" id="prog_gnd-to-gnd" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="837.18,293.6931,830.5569,286.4037,832.6045,291.677,827.3312,293.7246,837.18,293.6931" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="765.14" y="258.21">Ground</text><!--MD5=[617e94b63e7432e542ae0c5f41ce562f]
+link pro_micro to GMN177--><path d="M863.0331,468.5131 C863.2377,468.5131 863.4424,468.5131 863.6471,468.5131 C864.0564,468.5131 864.4658,468.5131 864.8752,468.5131 C868.15,468.5131 871.425,468.5131 874.7,468.5131 " fill="none" id="pro_micro-GMN177" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[a70c87c85a345a3f9d648331c1b67cde]
+link GMN180 to programmer--><path d="M678.11,100.0531 C674.74,100.0531 671.3706,100.0531 668.0016,100.0531 C667.5804,100.0531 667.1593,100.0531 666.7382,100.0531 C666.5276,100.0531 666.3171,100.0531 666.1065,100.0531 " fill="none" id="GMN180-programmer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="113" x="567" y="587.1519">©2025 Sean Donnellan</text><!--MD5=[9d02b12b75f5df40d69818a8dbfd0a5e]
+@startuml
+title ISP cabling for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam rectangleBackgroundColor #fff/aaf
+skinparam Shadowing 1
+
+rectangle "\n\nArduino Pro Micro" as pro_micro {
+  portin "MOSI (D16)" as mosi #purple
+  portin "MISO (D14)" as miso #purple
+  portin "SCK (D15)" as sck #purple
+  portin "RESET" as reset #gray
+  portin "VCC" as vcc #red
+  portin "GND" as gnd #black
+}
+
+rectangle "\n\nISP Programmer\n(e.g., USBasp, AVRISP)" as programmer {
+  portout "MOSI" as prog_mosi #purple
+  portout "MISO" as prog_miso #purple
+  portout "SCK" as prog_sck #purple
+  portout "RESET" as prog_reset #gray
+  portout "VCC" as prog_vcc #red
+  portout "GND" as prog_gnd #black
+}
+
+' ISP connections
+prog_mosi - -> mosi : SPI Data Out
+miso - -> prog_miso : SPI Data In
+prog_sck - -> sck : SPI Clock
+prog_reset - -> reset : Reset signal
+prog_vcc - -> vcc : Power (5V)
+prog_gnd - -> gnd : Ground
+
+note right of pro_micro
+  **ISP Header Pinout (6-pin):**
+  1: MISO (D14)
+  2: VCC (5V)
+  3: SCK (D15)
+  4: MOSI (D16)
+  5: RESET
+  6: GND
+
+  **Connection Notes:**
+  - Connect VCC only if programmer doesn't supply power
+  - RESET is active low
+  - Use 6-pin or 10-pin ISP cable
+  - Ensure proper orientation (pin 1 marked)
+end note
+
+note left of programmer
+  **Common ISP Programmers:**
+  - USBasp
+  - AVRISP mkII
+  - Arduino as ISP
+  - Raspberry Pi GPIO
+
+  **Programming Software:**
+  - avrdude
+  - Arduino IDE (with ISP)
+end note
+
+@enduml
+
+@startuml
+title ISP cabling for Pro Micro
+footer ©2025 Sean Donnellan
+skinparam backgroundColor #fff/aaf
+skinparam rectangleBackgroundColor #fff/aaf
+skinparam Shadowing 1
+
+rectangle "\n\nArduino Pro Micro" as pro_micro {
+  portin "MOSI (D16)" as mosi #purple
+  portin "MISO (D14)" as miso #purple
+  portin "SCK (D15)" as sck #purple
+  portin "RESET" as reset #gray
+  portin "VCC" as vcc #red
+  portin "GND" as gnd #black
+}
+
+rectangle "\n\nISP Programmer\n(e.g., USBasp, AVRISP)" as programmer {
+  portout "MOSI" as prog_mosi #purple
+  portout "MISO" as prog_miso #purple
+  portout "SCK" as prog_sck #purple
+  portout "RESET" as prog_reset #gray
+  portout "VCC" as prog_vcc #red
+  portout "GND" as prog_gnd #black
+}
+
+prog_mosi - -> mosi : SPI Data Out
+miso - -> prog_miso : SPI Data In
+prog_sck - -> sck : SPI Clock
+prog_reset - -> reset : Reset signal
+prog_vcc - -> vcc : Power (5V)
+prog_gnd - -> gnd : Ground
+
+note right of pro_micro
+  **ISP Header Pinout (6-pin):**
+  1: MISO (D14)
+  2: VCC (5V)
+  3: SCK (D15)
+  4: MOSI (D16)
+  5: RESET
+  6: GND
+
+  **Connection Notes:**
+  - Connect VCC only if programmer doesn't supply power
+  - RESET is active low
+  - Use 6-pin or 10-pin ISP cable
+  - Ensure proper orientation (pin 1 marked)
+end note
+
+note left of programmer
+  **Common ISP Programmers:**
+  - USBasp
+  - AVRISP mkII
+  - Arduino as ISP
+  - Raspberry Pi GPIO
+
+  **Programming Software:**
+  - avrdude
+  - Arduino IDE (with ISP)
+end note
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 16:16:42 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
