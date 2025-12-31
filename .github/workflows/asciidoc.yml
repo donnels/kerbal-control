@@ -16,14 +16,31 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+
+
       - name: Make the plantumls
-        id : plantuml-2-png-and-svg
+        id: plantuml-2-png-and-svg
         run: |
           cd plantuml
           docker build -t plantuml .
           cd ../images
           docker run -t -v"$PWD":/data plantuml *.plantuml
-          cd
+          cd ..
+
+      - name: Generate image index README.adoc
+        id: image-index-adoc
+        run: |
+          cd images
+          echo "= image index" > ../README.adoc
+          echo ":toc:" >> ../README.adoc
+          for img in *.{png,jpg,jpeg,gif,svg}; do
+            [ -e "$img" ] || continue
+            echo "[[${img}]]" >> ../README.adoc
+            echo "image::images/${img}[]" >> ../README.adoc
+            echo ".${img}" >> ../README.adoc
+            echo >> ../README.adoc
+          done
+          cd ..
       
       - name: Make the PDFs and HTMLs
         id: asciidoc-2-html-and-pdf
