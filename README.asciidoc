@@ -90,7 +90,7 @@ To get started I went to an example for LEDs to be able to later set a LED with 
 .First LED example (arduino IDE)
 [source%linenums, c++]
 ----
-include::./fastled-test/fastled-test.ino[]
+include::./src/fastled-test/fastled-test.ino[]
 ----
 
 [NOTE]
@@ -171,7 +171,7 @@ Let's see if some of the above works.
 .initial tests
 [source%linenums, c++]
 ----
-include::./button-test/button-test.ino[]
+include::./src/button-test/button-test.ino[]
 ----
 
 [NOTE]
@@ -196,7 +196,7 @@ image::./images/debounce2.png[]
 .Second button test non latching (armed/disarmed)
 [source%linenums, c++]
 ----
-include::./button-test2/button-test2.ino[]
+include::./src/button-test2/button-test2.ino[]
 ----
 
 [NOTE]
@@ -210,7 +210,7 @@ Serial monitor was used to check the function.
 .Integrated controller with LEDs, arm/disarm button, and stage button
 [source%linenums, c++]
 ----
-include::./kerbal-controller.ino[]
+include::./src/kerbal-controller/kerbal-controller.ino[]
 ----
 
 This MVP integrates LEDs for status, debounced buttons, and keyboard emulation for staging.
@@ -391,7 +391,7 @@ image::./images/2022-02-18T14-46%3A09-576Z.png[]
 
 Code written. Compiled clean. USB fails. ISP wired. Ready to burn. Board waits. Test next.
 
-- MVP controller code integrated in [`kerbal-controller.ino`](kerbal-controller.ino).
+- MVP controller code integrated in [`kerbal-controller.ino`](src/kerbal-controller/kerbal-controller.ino).
 - Compiled successfully on Pi Zero using Arduino CLI.
 - USB programming blocked by hardware issues; switched to ISP via avrdude.
 - Wiring: Pi GPIOs to Pro Micro ISP header for SPI programming.
@@ -408,7 +408,7 @@ This project uses a split development workflow between a host machine (Steamdeck
 . Transfer the updated code to the Raspberry Pi using `scp`:
 +
 ----
-scp /path/to/kerbal-controller.ino sean@arduinoworkstation.fritz.box:/home/sean/kerbal-control/
+scp /path/to/src/kerbal-controller/kerbal-controller.ino sean@arduinoworkstation.fritz.box:/home/sean/kerbal-control/
 ----
 . SSH into the Raspberry Pi:
 +
@@ -419,12 +419,12 @@ ssh sean@arduinoworkstation.fritz.box
 +
 ----
 cd /home/sean/kerbal-control
-/home/sean/bin/arduino-cli compile --fqbn arduino:avr:leonardo kerbal-control.ino
+/home/sean/bin/arduino-cli compile --fqbn arduino:avr:leonardo src/kerbal-controller/kerbal-controller.ino
 ----
 . Upload the compiled code to the Arduino Pro Micro:
 +
 ----
-/home/sean/bin/arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:leonardo kerbal-control.ino
+/home/sean/bin/arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:leonardo src/kerbal-controller/kerbal-controller.ino
 ----
 . (Optional) Monitor serial output for debugging:
 +
